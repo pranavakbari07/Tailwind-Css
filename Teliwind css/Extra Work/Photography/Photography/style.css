@@ -1,0 +1,22 @@
+.bg{
+    background-image: url(./img/bg.jpg); 
+    background-position: center;  
+    background-size: cover;
+}
+.subscribe{
+    background-image: url(./img/slide3.jpg); 
+    background-position: center; 
+    background-attachment: fixed; 
+    background-size: cover;
+}
+.font{
+    font-family: sans-serif;
+}
+.input ::placeholder{
+    color: white;
+    font-size: 14px;
+}
+.email ::placeholder{
+    font-size: 12px;
+    color: rgb(79, 79, 79);
+}
