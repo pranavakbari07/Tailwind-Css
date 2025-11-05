@@ -1,0 +1,76 @@
+body::-webkit-scrollbar{
+    display: none;
+}
+*{
+    font-family: "Playfair Display", serif;
+}
+.word{
+    font-family: "Clicker Script", cursive;
+}
+.bens{
+    font-family: "Clicker Script", cursive;
+}
+.back{
+    background-image: url(./img/bg.png);
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+}
+.morning{
+    width: 100%;
+    height: 574px;
+    background-image: url(./img/Best\ Morning.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.footer{
+    width: 100%;
+    height: 374px;
+    background-image: url(./img/Footer\ img\ 1.png);
+    background-position: center;
+    background-size: cover;
+}
+.footer-1{
+    width: 100%;
+    height: 450px;
+    background-image: url(./img/footer.png);
+    background-position: center;
+    background-size: cover;
+}
+@media (max-width:640px) {
+    .morning{
+        width: 920px;
+        height: 450px;
+        background-position: center;
+        background-size: contain;
+    }   
+    .footer-1{
+        width: 920px;
+        height: 700px;
+        background-image: none;
+    } 
+}
+@media (max-width:768px) {
+    .morning{
+       width: 920px;
+       height: 400px;
+       background-position: center;
+       background-size: contain;
+    }   
+    .footer-1{
+        width: 920px;
+    } 
+}
+@media (max-width:1024px) {
+    .morning{
+       width: 1020px;
+       height: 400px;
+       background-position: center;
+       background-size: contain;
+    }   
+    .footer-1{
+        width: 1028px;
+        height: 700px;
+    } 
+}

@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant - Rishi Theme Restaurant Demo</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="shortcut icon" href="./img/logo.png" type="image/x-icon">
+</head>
+<body>
+    <!--nav-->
+    <nav class="w-full bg-black px-50 py-4 flex justify-between items-center text-white fixed max-sm:px-20 max-md:px-20 max-lg:px-30 max-xl:px-30">
+        <img src="./img/logo.png" alt="" class="w-47 max-sm:w-40">
+        <div class="flex items-center gap-8">
+            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" class="hidden max-sm:flex"><path fill="#fff" d="M3 18v-2h18v2zm0-5v-2h18v2zm0-5V6h18v2z"/></svg>
+            <ul class="font-semibold flex gap-8 max-sm:hidden">
+                <li class="text-[#fe6500]"><a href="#">HOME</a></li>
+                <li class="hover:text-[#fe6500]"><a href="#">ABOUT</a></li>
+                <li class="hover:text-[#fe6500]"><a href="#">MENU</a></li>
+                <li class="hover:text-[#fe6500]"><a href="#">TESTIMONIALS</a></li>
+                <li class="hover:text-[#fe6500]"><a href="#">BLOG</a></li>
+                <li class="hover:text-[#fe6500]"><a href="#">CONTACT</a></li>
+            </ul>
+            <button class="py-3 px-10 bg-[#fe6500] text-xl rounded-lg hover:bg-white hover:text-black cursor-pointer duration-300 max-sm:py-4 max-sm:text-2xl">Make a Reservation</button>
+            <svg xmlns="http://www.w3.org/2000/svg" class="cursor-pointer" width="28" height="28" viewBox="0 0 24 24"><path fill="#fff" d="m18.031 16.617l4.283 4.282l-1.415 1.415l-4.282-4.283A8.96 8.96 0 0 1 11 20c-4.968 0-9-4.032-9-9s4.032-9 9-9s9 4.032 9 9a8.96 8.96 0 0 1-1.969 5.617m-2.006-.742A6.98 6.98 0 0 0 18 11c0-3.867-3.133-7-7-7s-7 3.133-7 7s3.133 7 7 7a6.98 6.98 0 0 0 4.875-1.975z"/></svg>
+        </div>
+    </nav>
+    <!--nav-->
+
+    <!--hero-->
+    <div class="hero w-398 text-white px-50 flex flex-col justify-end max-sm:px-20 max-md:px-20 max-lg:px-30 max-xl:px-30">
+        <h1 class="text-5xl font-bold max-sm:text-6xl max-md:text-6xl">Delicious Food For You.</h1>
+        <p class="text-[22px] py-10 max-sm:text-3xl max-md:text-3xl">We have served more than 100k customers around the<br>globe.Loved and Trusted by our customers.</p>
+        <button class="py-3 mb-38 w-50 bg-[#fe6500] text-xl rounded-lg hover:bg-white hover:text-[#fe6500] hover:border-1 cursor-pointer duration-300 max-sm:py-4.5 max-sm:text-2xl max-sm:w-60 max-md:py-5 max-md:text-2xl max-md:w-60">View Our Menu</button>
+    </div>
+    <!--hero-->
+
+    <!--offer-->
+    <div class="w-398 text-center px-50 pt-20 max-sm:px-20 max-md:px-20 max-lg:px-30 max-xl:px-30">
+        <h1 class="text-[45px] font-bold max-sm:text-[60px] max-md:text-[55px]">What We Offer</h1>
+        <p class="text-[#3E3E3E] text-xl mt-2 max-sm:text-3xl max-md:text-2xl">It is a long established fact that a reader will be distracted by the read content of a<br>page when looking at its layout.</p>
+        <div class="flex justify-between mt-18 pb-20">
+            <div>
+                <img src="./img/boy.png" alt="" class="w-97 rounded-lg max-sm:hidden max-md:w-115 max-lg:w-105">
+                <h2 class="text-2xl font-semibold py-6 max-sm:text-4xl max-md:text-3xl">Organic Ingendiants</h2>
+                <p class="text-xl text-[#3E3E3E] max-sm:text-3xl max-md:text-2xl">It is a long established fact that a<br>reader will be distracted by the<br>readable content.</p>
+            </div> 
+            <div>
+                <img src="./img/girl.png" alt="" class="w-97 rounded-lg max-sm:hidden max-md:w-115 max-lg:w-105">
+                <h2 class="text-2xl font-semibold py-6 max-sm:text-4xl max-md:text-3xl">Daily Fresh</h2>
+                <p class="text-xl text-[#3E3E3E] max-sm:text-3xl max-md:text-2xl">It is a long established fact that a<br>reader will be distracted by the<br>readable content.</p>
+            </div>
+            <div>
+                <img src="./img/sign.png" alt="" class="max-sm:hidden max-md:w-115 max-lg:w-105">
+                <h2 class="text-2xl font-semibold py-6 max-sm:text-4xl max-md:text-3xl">Best Chefs</h2>
+                <p class="text-xl text-[#3E3E3E] max-sm:text-3xl max-md:text-2xl">It is a long established fact that a<br>reader will be distracted by the<br>readable content.</p>
+            </div>
+        </div>
+        <hr class="px-50 text-[#E5E5E5] max-sm:hidden">
+    </div>
+    <!--offer-->
+
+    <!--our-->
+    <div class="w-398 text-center flex flex-col items-center py-20 px-50 max-sm:px-20 max-md:px-20 max-lg:px-30 max-xl:px-30">
+        <h1 class="text-[45px] font-bold max-sm:text-[60px] max-md:text-[55px]">Our Story</h1>
+        <p class="text-[#3E3E3E] text-xl mt-2 max-sm:text-3xl max-md:text-2xl">It is a long established fact that a reader will be distracted by the read content of a<br>page when looking at its layout.</p>    
+        <div class="flex gap-8 py-18 max-sm:flex-col max-sm:gap-15 max-md:gap-15">
+            <img src="./img/boy.png" alt="" class="w-145 rounded-lg max-sm:w-260 max-md:w-260">
+            <img src="./img/girl.png" alt="" class="w-145 rounded-lg max-sm:w-260 max-md:w-260">
+        </div>    
+        <p class="text-[#3E3E3E] text-xl max-sm:text-3xl max-md:text-3xl">A restaurant, or an eatery, is a business that prepares and serves food and drinks to<br>customers. Meals are generally served and eaten on the premises, but many restaurants<br>also offer take-out and food delivery services. Restaurants vary greatly in appearance and<br>offerings, including a wide variety of cuisines and service models ranging from inexpensiv<br>fast food restaurants and cafeterias</p>
+        <div class="bg-[#ffa66b] w-28 h-[3px] my-15 max-sm:w-50"></div>
+        <h2 class="font-semibold text-[26px] max-sm:text-[32px] max-md:text-3xl">Follow Us</h2>
+        <div class="flex gap-3 py-8">
+            <div class="border-2 border-[#E5E5E5] rounded-full p-3 hover:bg-[#ffa66b] cursor-pointer duration-300 hover:hideen max-sm:p-5"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" class="max-sm:w-10 max-sm:h-10" viewBox="0 0 24 24"><path fill="#000" d="M14 13.5h2.5l1-4H14v-2c0-1.03 0-2 2-2h1.5V2.14c-.326-.043-1.557-.14-2.857-.14C11.928 2 10 3.657 10 6.7v2.8H7v4h3V22h4z"/></svg></div>
+            <div class="border-2 border-[#E5E5E5] rounded-full p-3 hover:bg-[#ffa66b] cursor-pointer duration-300 hover:hideen max-sm:p-5"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" class="max-sm:w-10 max-sm:h-10" viewBox="-2 -4 24 24"><path fill="#000" d="M20 1.907a8.3 8.3 0 0 1-2.356.637A4.07 4.07 0 0 0 19.448.31a8.4 8.4 0 0 1-2.607.98A4.12 4.12 0 0 0 13.846.015c-2.266 0-4.103 1.81-4.103 4.04q0 .476.106.92A11.7 11.7 0 0 1 1.393.754a3.96 3.96 0 0 0-.554 2.03a4.02 4.02 0 0 0 1.824 3.363A4.15 4.15 0 0 1 .805 5.64v.05c0 1.958 1.415 3.591 3.29 3.963a4.2 4.2 0 0 1-1.08.141q-.397 0-.773-.075a4.1 4.1 0 0 0 3.832 2.807a8.3 8.3 0 0 1-5.095 1.727q-.498-.001-.979-.056a11.73 11.73 0 0 0 6.289 1.818c7.547 0 11.673-6.157 11.673-11.496l-.014-.523A8.1 8.1 0 0 0 20 1.907"/></svg></div>
+            <div class="border-2 border-[#E5E5E5] rounded-full p-3 hover:bg-[#ffa66b] cursor-pointer duration-300 hover:hideen max-sm:p-5"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" class="max-sm:w-10 max-sm:h-10" viewBox="0 0 16 16"><path fill="#000" d="M8 10.2a2.25 2.25 0 0 1 0-4.5a2.25 2.25 0 0 1 0 4.5"/><path fill="#000" fill-rule="evenodd" d="M5.08 1.05c.594-.031 1.57-.047 2.92-.047s2.33.016 2.92.047c.525.019 1.05.108 1.55.266c.511.182.975.476 1.36.86s.677.848.859 1.36a6.4 6.4 0 0 1 .282 1.56c.02.583.031 1.55.031 2.91s-.016 2.33-.047 2.92a6 6 0 0 1-.266 1.55a3.67 3.67 0 0 1-2.22 2.22a6 6 0 0 1-1.55.266q-.893.047-2.92.047c-2.027 0-2.33-.016-2.92-.047a5.2 5.2 0 0 1-1.55-.296a3.34 3.34 0 0 1-1.36-.828a3.65 3.65 0 0 1-.86-1.36a6 6 0 0 1-.266-1.55q-.047-.893-.047-2.92c0-2.027.016-2.33.047-2.92c.019-.525.108-1.05.266-1.55a3.66 3.66 0 0 1 2.22-2.22a6 6 0 0 1 1.55-.266zm6.19 2.47a.87.87 0 0 1 1.102.113a.88.88 0 0 1 .259.616a1 1 0 0 1-.275.616a.8.8 0 0 1-.6.26a.84.84 0 0 1-.616-.26a.87.87 0 0 1 .13-1.343zM6.26 4.97a3.4 3.4 0 0 1 1.75-.472a3.4 3.4 0 0 1 1.75.472c.53.307.971.748 1.28 1.28s.472 1.14.472 1.75a3.515 3.515 0 0 1-3.502 3.502A3.515 3.515 0 0 1 4.509 8c0-.615.163-1.22.471-1.75s.748-.971 1.28-1.28" clip-rule="evenodd"/></svg></div>
+            <div class="border-2 border-[#E5E5E5] rounded-full p-3 hover:bg-[#ffa66b] cursor-pointer duration-300 hover:hideen max-sm:p-5"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" class="max-sm:w-10 max-sm:h-10" viewBox="0 0 448 512"><path fill="#000" d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3M447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2c-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3c94 0 111.28 61.9 111.28 142.3V448z"/></svg></div>
+        </div>
+    </div>
+    <!--our-->
+
+    <!--tea-->
+    <div class="w-398 flex justify-center gap-18 max-sm:px-20 max-sm:gap-50 max-md:px-20 max-lg:px-30 max-lg:gap-35 max-xl:px-30">
+        <ul class="text-[22px] w-40 max-sm:hidden max-md:text-3xl max-md:w-80 max-lg:w-55">
+            <li class="text-[#ff9660]"><a href="#">Tea</a></li>
+            <li class="hover:text-[#ff9660] mt-7 max-md:mt-10"><a href="#">Bruschetti</a></li>
+            <li class="hover:text-[#ff9660] mt-7 max-md:mt-10"><a href="#">Awesome Vegetables</a></li>
+            <li class="hover:text-[#ff9660] mt-7 max-md:mt-10"><a href="#">Tasty Snacks</a></li>
+            <li class="hover:text-[#ff9660] mt-7 max-md:mt-10"><a href="#">All-Time Best Recipes</a></li>
+            <li class="hover:text-[#ff9660] mt-7 max-md:mt-10"><a href="#">Meal For Whole Family</a></li>
+        </ul>
+        <div class="text-[#3E3E3E] text-[17px] leading-12 max-sm:text-3xl max-sm:leading-25 max-md:text-2xl max-md:leading-20">
+            <h3>Masala Tea…………………₹12</h3>
+            <h3>Ginger Tea………………₹15</h3>
+            <h3>Black Tea…………………₹10</h3>
+            <h3>Special Tea (Kulhad)………₹20</h3>
+            <h3>Ice Tea……………………₹39</h3>
+            <h3>Bubble Tea…………………₹59</h3>
+        </div>
+        <img src="./img/sweet.jpg" alt="" class="rounded-lg w-75 h-80 ml-16 max-sm:w-125 max-sm:h-132 max-sm:mt-8 max-md:w-95 max-md:h-105">
+    </div>
+    <!--tea-->
+
+    <!--services-->
+    <div class="w-398 pt-30 px-50 text-center max-sm:px-20 max-md:px-20 max-lg:px-30 max-xl:px-30">
+        <h1 class="text-[45px] font-bold max-sm:text-[60px] max-md:text-[55px]">Our Services</h1>
+        <p class="text-[#3E3E3E] text-xl mt-2 max-sm:text-3xl max-md:text-2xl">It is a long established fact that a reader will be distracted by the read content of a<br>page when looking at its layout.</p>
+        <div class="flex justify-between mt-18 pb-20">
+            <div>
+                <img src="./img/bg.png" alt="" class="w-97 rounded-lg max-sm:hidden max-md:hidden">
+                <h2 class="text-2xl font-semibold py-7 max-sm:text-4xl max-sm:mt-26 max-md:text-3xl max-md:mt-16">Breakfast</h2>
+                <p class="text-xl text-[#3E3E3E] max-sm:text-3xl max-md:text-2xl">It is a long established fact that a<br>reader will be distracted by the<br>readable content.</p>
+            </div>
+            <div class="flex flex-col items-center">
+                <img src="./img/leaf-1.png" alt="" class="w-22 max-sm:w-35">
+                <h2 class="text-2xl font-semibold py-7 max-sm:text-4xl max-md:text-3xl">Lunch</h2>
+                <p class="text-xl text-[#3E3E3E] max-sm:text-3xl max-md:text-2xl">It is a long established fact that a<br>reader will be distracted by the<br>readable content.</p>
+            </div>
+            <div class="flex flex-col items-center">
+                <img src="./img/refresh-1.png" alt="" class="w-22 max-sm:w-35">
+                <h2 class="text-2xl font-semibold py-7 max-sm:text-4xl max-md:text-3xl">Dinner</h2>
+                <p class="text-xl text-[#3E3E3E] max-sm:text-3xl max-md:text-2xl">It is a long established fact that a<br>reader will be distracted by the<br>readable content.</p>
+            </div>
+        </div>
+    </div>
+    <!--services-->
+
+    <!--menu-->
+    <div class="w-398 py-15 px-50 flex flex-col items-center max-sm:px-20 max-md:px-20 max-lg:px-30 max-xl:px-30">
+        <h1 class="text-[45px] text-center font-bold max-sm:text-[60px] max-md:text-[55px]">Our Menu</h1>
+        <p class="text-[#3E3E3E] text-center text-xl mt-2 max-sm:text-3xl max-md:text-2xl">It is a long established fact that a reader will be distracted by the read content of a<br>page when looking at its layout.</p>
+        <div class="flex gap-30 py-20 max-sm:flex-col max-sm:gap-20">
+            <div class="max-sm:flex max-sm:flex-col max-sm:gap-10">
+                <div class="flex items-center gap-7 max-sm:gap-10">
+                <img src="./img/cayla-1.jpg" alt="" class="max-sm:w-35 max-md:w-20">
+                <div>
+                    <div class="flex gap-3 items-center">
+                        <h1 class="text-xl font-semibold max-sm:text-4xl max-md:text-2xl">Mussels Soup</h1>
+                        <p class="text-[#ccc6c6] text-2xl max-sm:text-5xl max-md:text-3xl">-------------------------------</p>
+                        <h2 class="text-xl max-sm:text-4xl max-md:text-2xl">$49</h2>
+                    </div>
+                    <h2 class="text-[#978787] text-lg max-sm:text-3xl max-sm:mt-5 max-md:text-xl">It is a long established fact that a reader.</h2>
+                </div>
+                </div>
+                <div class="flex items-center gap-7 mt-11 max-sm:gap-10">
+                <img src="./img/cayla-2.jpg" alt="" class="max-sm:w-35 max-md:w-20">
+                <div>
+                    <div class="flex gap-3 items-center">
+                        <h1 class="text-xl font-semibold max-sm:text-4xl max-md:text-2xl">Itlian Spaghetti</h1>
+                        <p class="text-[#ccc6c6] text-2xl max-sm:text-5xl max-md:text-3xl">------------------------------</p>
+                        <h2 class="text-xl max-sm:text-4xl max-md:text-2xl">$49</h2>
+                    </div>
+                    <h2 class="text-[#978787] text-lg max-sm:text-3xl max-sm:mt-5 max-md:text-xl">It is a long established fact that a reader.</h2>
+                </div>
+                </div>
+                <div class="flex items-center gap-7 mt-11">
+                <img src="./img/cayla-3.jpg" alt="" class="max-sm:w-35 max-md:w-20">
+                <div>
+                    <div class="flex gap-3 items-center">
+                        <h1 class="text-xl font-semibold max-sm:text-4xl max-md:text-2xl">Beef Burger</h1>
+                        <p class="text-[#ccc6c6] text-2xl max-sm:text-5xl max-md:text-3xl">----------------------------------</p>
+                        <h2 class="text-xl max-sm:text-4xl max-md:text-2xl">$49</h2>
+                    </div>
+                    <h2 class="text-[#978787] text-lg max-sm:text-3xl max-sm:mt-5 max-md:text-xl">It is a long established fact that a reader.</h2>
+                </div>
+                </div>
+                <div class="flex items-center gap-7 mt-11 max-sm:gap-10">
+                <img src="./img/cayla-4.jpg" alt="" class="max-sm:w-35 max-md:w-20">
+                <div>
+                    <div class="flex gap-3 items-center">
+                        <h1 class="text-xl font-semibold max-sm:text-4xl max-md:text-2xl">Stuffed Strawberry</h1>
+                        <p class="text-[#ccc6c6] text-2xl max-sm:text-5xl max-md:text-3xl">--------------------------</p>
+                        <h2 class="text-xl max-sm:text-4xl max-md:text-2xl">$49</h2>
+                    </div>
+                    <h2 class="text-[#978787] text-lg max-sm:text-3xl max-sm:mt-5 max-md:text-xl">It is a long established fact that a reader.</h2>
+                </div>
+                </div>
+                <div class="flex items-center gap-7 mt-11 max-sm:gap-10">
+                <img src="./img/cayla-2.jpg" alt="" class="max-sm:w-35 max-md:w-20">
+                <div>
+                    <div class="flex gap-3 items-center">
+                        <h1 class="text-xl font-semibold max-sm:text-4xl max-md:text-2xl">Scrambled Eggs in puff Pastry</h1>
+                        <p class="text-[#ccc6c6] text-2xl max-sm:text-5xl max-md:text-3xl">-------------</p>
+                        <h2 class="text-xl max-sm:text-4xl max-md:text-2xl">$49</h2>
+                    </div>
+                    <h2 class="text-[#978787] text-lg max-sm:text-3xl max-sm:mt-5 max-md:text-xl">It is a long established fact that a reader.</h2>
+                </div>
+                </div>
+            </div>
+            <div class="max-sm:flex max-sm:flex-col max-sm:gap-10">
+                <div class="flex items-center gap-7 max-sm:gap-10">
+                <img src="./img/1.jpg" alt="" class="max-sm:w-35 max-md:w-20">
+                <div>
+                    <div class="flex gap-3 items-center">
+                        <h1 class="text-xl font-semibold max-sm:text-4xl max-md:text-2xl">Sicilian Meatballs</h1>
+                        <p class="text-[#ccc6c6] text-2xl max-sm:text-5xl max-md:text-3xl">---------------------------</p>
+                        <h2 class="text-xl max-sm:text-4xl max-md:text-2xl">$49</h2>
+                    </div>
+                    <h2 class="text-[#978787] text-lg max-sm:text-3xl max-sm:mt-5 max-md:text-xl">It is a long established fact that a reader.</h2>
+                </div>
+                </div>
+                <div class="flex items-center gap-7 mt-11 max-sm:gap-10">
+                <img src="./img/2.jpg" alt="" class="max-sm:w-35 max-md:w-20">
+                <div>
+                    <div class="flex gap-3 items-center">
+                        <h1 class="text-xl font-semibold max-sm:text-4xl max-md:text-2xl">Seafood Salad</h1>
+                        <p class="text-[#ccc6c6] text-2xl max-sm:text-5xl max-md:text-3xl">-------------------------------</p>
+                        <h2 class="text-xl max-sm:text-4xl max-md:text-2xl">$49</h2>
+                    </div>
+                    <h2 class="text-[#978787] text-lg max-sm:text-3xl max-sm:mt-5 max-md:text-xl">It is a long established fact that a reader.</h2>
+                </div>
+                </div>
+                <div class="flex items-center gap-7 mt-11 max-sm:gap-10">
+                <img src="./img/3.jpg" alt="" class="max-sm:w-35 max-md:w-20">
+                <div>
+                    <div class="flex gap-3 items-center">
+                        <h1 class="text-xl font-semibold max-sm:text-4xl max-md:text-2xl">Roasted Chicken</h1>
+                        <p class="text-[#ccc6c6] text-2xl max-sm:text-5xl max-md:text-3xl">----------------------------</p>
+                        <h2 class="text-xl max-sm:text-4xl max-md:text-2xl">$49</h2>
+                    </div>
+                    <h2 class="text-[#978787] text-lg max-sm:text-3xl max-sm:mt-5 max-md:text-xl">It is a long established fact that a reader.</h2>
+                </div>
+                </div>
+                <div class="flex items-center gap-7 mt-11 max-sm:gap-10">
+                <img src="./img/4.jpg" alt="" class="max-sm:w-35 max-md:w-20">
+                <div>
+                    <div class="flex gap-3 items-center">
+                        <h1 class="text-xl font-semibold max-sm:text-4xl max-md:text-2xl">Grilled Fish</h1>
+                        <p class="text-[#ccc6c6] text-2xl max-sm:text-5xl max-md:text-3xl">----------------------------------</p>
+                        <h2 class="text-xl max-sm:text-4xl max-md:text-2xl">$49</h2>
+                    </div>
+                    <h2 class="text-[#978787] text-lg max-sm:text-3xl max-sm:mt-5 max-md:text-xl">It is a long established fact that a reader.</h2>
+                </div>
+                </div>
+                <div class="flex items-center gap-7 mt-11 max-sm:gap-10">
+                <img src="./img/5.jpg" alt="" class="max-sm:w-35 max-md:w-20">
+                <div>
+                    <div class="flex gap-3 items-center">
+                        <h1 class="text-xl font-semibold max-sm:text-4xl max-md:text-2xl">Soft-Boiled Organic Egg</h1>
+                        <p class="text-[#ccc6c6] text-2xl max-sm:text-5xl max-md:text-3xl">--------------------</p>
+                        <h2 class="text-xl max-sm:text-4xl max-md:text-2xl">$49</h2>
+                    </div>
+                    <h2 class="text-[#978787] text-lg max-sm:text-3xl max-sm:mt-5 max-md:text-xl">It is a long established fact that a reader.</h2>
+                </div>
+                </div>
+            </div>
+        </div>     
+        <button class="py-4 mb-38 w-50 bg-[#fe6500] text-xl text-white rounded-lg hover:bg-white hover:text-[#fe6500] hover:border-1 cursor-pointer duration-300 max-sm:w-75 max-sm:py-8 max-sm:text-3xl max-md:py-5.5 max-md:w-55 max-md:text-2xl">View Our Menu</button>
+    </div>
+    <!--menu-->
+
+    <!--chef-->
+    <div class="w-398 px-50 pb-25 flex justify-between max-sm:px-20 max-sm:flex-col max-sm:items-center max-md:px-20 max-lg:px-30 max-xl:px-30">
+        <div class="max-sm:text-center">
+            <h1 class="text-[45px] font-bold mt-12 max-sm:text-[60px] max-md:text-[55px]">Our Head Chef</h1>
+            <p class="py-8 text-[#3E3E3E] text-lg max-sm:text-4xl max-md:text-xl">There are many variations of passages of Lorem Ipsum available,<br>but the majority have suffered alteration in some form, by injected<br>humour, or randomised words which don’t look even slightly<br>believable. If you are going to use a passage of Lorem Ipsum, you<br>need to be sure there isn’t anything embarrassing hidden.</p>
+            <p class="pb-8 text-[#3E3E3E] text-lg max-sm:text-4xl max-md:text-xl">It is a long established fact that a reader will be distracted by the<br>readable content of a page when looking at its layout. The point of<br>using Lorem Ipsum is that it has a more-or-less normal distribution<br>of letters, as opposed to using ‘Content here, content here’, making<br>it look like readable English. Many desktop publishing packages<br>and web page editors now use Lorem Ipsum as their default model<br>text, and a search</p>
+            <img src="./img/2.jpg" alt="" class="max-sm:hidden max-md:w-25">
+        </div>
+        <div>
+            <img src="./img/chef.jpg" alt="" class="max-sm:mt-10 max-sm:w-235 max-md:w-150">
+            <div class="flex justify-between items-center max-sm:flex-col">
+                <div class="max-sm:mt-10 max-sm:text-center">
+                    <h1 class="text-2xl font-semibold max-sm:text-6xl max-md:text-3xl">Jack Richard</h1>
+                    <h2 class="text-xl text-[#3E3E3E] max-sm:text-5xl max-sm:mt-5 max-md:text-2xl">Head Chef</h2>
+                </div>
+                <div class="flex gap-3 py-8">
+                    <div class="border-2 border-[#E5E5E5] rounded-full p-2 hover:bg-[#ffa66b] cursor-pointer duration-300 hover:hideen max-sm:p-5"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" class="max:sm-w-10 max-sm:h-10 max-md:w-8 max-md:h-8" viewBox="0 0 24 24"><path fill="#000" d="M14 13.5h2.5l1-4H14v-2c0-1.03 0-2 2-2h1.5V2.14c-.326-.043-1.557-.14-2.857-.14C11.928 2 10 3.657 10 6.7v2.8H7v4h3V22h4z"/></svg></div>
+                    <div class="border-2 border-[#E5E5E5] rounded-full p-2 hover:bg-[#ffa66b] cursor-pointer duration-300 hover:hideen max-sm:p-5"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" class="max-sm:w-10 max-sm:h-10 max-md:w-8 max-md:h-8" viewBox="-2 -4 24 24"><path fill="#000" d="M20 1.907a8.3 8.3 0 0 1-2.356.637A4.07 4.07 0 0 0 19.448.31a8.4 8.4 0 0 1-2.607.98A4.12 4.12 0 0 0 13.846.015c-2.266 0-4.103 1.81-4.103 4.04q0 .476.106.92A11.7 11.7 0 0 1 1.393.754a3.96 3.96 0 0 0-.554 2.03a4.02 4.02 0 0 0 1.824 3.363A4.15 4.15 0 0 1 .805 5.64v.05c0 1.958 1.415 3.591 3.29 3.963a4.2 4.2 0 0 1-1.08.141q-.397 0-.773-.075a4.1 4.1 0 0 0 3.832 2.807a8.3 8.3 0 0 1-5.095 1.727q-.498-.001-.979-.056a11.73 11.73 0 0 0 6.289 1.818c7.547 0 11.673-6.157 11.673-11.496l-.014-.523A8.1 8.1 0 0 0 20 1.907"/></svg></div>
+                    <div class="border-2 border-[#E5E5E5] rounded-full p-2 hover:bg-[#ffa66b] cursor-pointer duration-300 hover:hideen max-sm:p-5"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" class="max-sm:w-10 max-sm:h-10 max-md:w-8 max-md:h-8" viewBox="0 0 16 16"><path fill="#000" d="M8 10.2a2.25 2.25 0 0 1 0-4.5a2.25 2.25 0 0 1 0 4.5"/><path fill="#000" fill-rule="evenodd" d="M5.08 1.05c.594-.031 1.57-.047 2.92-.047s2.33.016 2.92.047c.525.019 1.05.108 1.55.266c.511.182.975.476 1.36.86s.677.848.859 1.36a6.4 6.4 0 0 1 .282 1.56c.02.583.031 1.55.031 2.91s-.016 2.33-.047 2.92a6 6 0 0 1-.266 1.55a3.67 3.67 0 0 1-2.22 2.22a6 6 0 0 1-1.55.266q-.893.047-2.92.047c-2.027 0-2.33-.016-2.92-.047a5.2 5.2 0 0 1-1.55-.296a3.34 3.34 0 0 1-1.36-.828a3.65 3.65 0 0 1-.86-1.36a6 6 0 0 1-.266-1.55q-.047-.893-.047-2.92c0-2.027.016-2.33.047-2.92c.019-.525.108-1.05.266-1.55a3.66 3.66 0 0 1 2.22-2.22a6 6 0 0 1 1.55-.266zm6.19 2.47a.87.87 0 0 1 1.102.113a.88.88 0 0 1 .259.616a1 1 0 0 1-.275.616a.8.8 0 0 1-.6.26a.84.84 0 0 1-.616-.26a.87.87 0 0 1 .13-1.343zM6.26 4.97a3.4 3.4 0 0 1 1.75-.472a3.4 3.4 0 0 1 1.75.472c.53.307.971.748 1.28 1.28s.472 1.14.472 1.75a3.515 3.515 0 0 1-3.502 3.502A3.515 3.515 0 0 1 4.509 8c0-.615.163-1.22.471-1.75s.748-.971 1.28-1.28" clip-rule="evenodd"/></svg></div>
+                    <div class="border-2 border-[#E5E5E5] rounded-full p-2 hover:bg-[#ffa66b] cursor-pointer duration-300 hover:hideen max-sm:p-5"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" class="max-sm:w-10 max-sm:h-10 max-md:w-8 max-md:h-8" viewBox="0 0 448 512"><path fill="#000" d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3M447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2c-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3c94 0 111.28 61.9 111.28 142.3V448z"/></svg></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--chef-->
+
+    <!--managing-->
+    <div class="attach w-398 h-98 flex flex-col justify-center items-center text-center text-white max-sm:px-20 max-sm:h-175 max-md:h-135 max-lg:px-30 max-xl:px-30">
+        <img src="./img/men.jpg" alt="" class="rounded-full w-30 h-30 max-sm:w-60 max-sm:h-60">
+        <h3 class="mt-3 max-sm:text-4xl max-sm:my-10 max-md:text-2xl">Managing Director</h3>
+        <p class="text-[22px] pt-6 max-sm:text-3xl max-md:text-3xl">“It is a long established fact that a reader will be distracted by the readable content of<br>a page when looking at its layout. The point of using Lorem Ipsum is that it has a<br>more-or-less normal distribution of letters, as opposed to using 'Content here,<br>content here', making it look like readable English.</p>
+    </div>
+    <!--managing-->
+
+    <!--cook-->
+    <div class="w-398 py-30 px-50 max-sm:px-20 max-md:px-20 max-lg:px-30 max-xl:px-30">
+        <h1 class="text-[45px] text-center font-bold max-sm:text-[60px] max-md:text-[55px]">Learn To Cook</h1>
+        <p class="text-[#3E3E3E] text-center text-xl mt-2 max-sm:text-3xl max-md:text-2xl">It is a long established fact that a reader will be distracted by the read content of a<br>page when looking at its layout.</p>
+        <div class="flex justify-between pt-15 max-sm:flex-col max-sm:items-center max-sm:gap-20 max-sm:text-center">
+            <div class="w-90 max-sm:hidden">
+                <h2 class="text-sm text-[#3E3E3E] mb-1 mt-3 max-md:text-base">Uncategorised</h2>
+                <p class="hover:text-[#ff6500] text-[26px] font-semibold pb-3 cursor-pointer duration-300 max-md:text[28px]">Blog Post Title</p>
+                <h2 class="text-[#9da0a3] text-lg max-md:text-xl">November 5,2024</h2>
+                <h3 class="text-lg py-2 max-md:text-xl">What goes into a blog post? Helpful,<br>industry-specific content that:...</h3>
+                <button class="flex items-center gap-2 hover:gap-5 duration-300 text-[#ff6500] text-xl mt-4 font-semibold cursor-pointer max-md:text-2xl">Continue Reading<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" class="mt-1 max-md:w-5 max-md:h-5" viewBox="0 0 512 512"><path fill="#ff6500" d="m359.873 121.377l-22.627 22.627l95.997 95.997H16v32.001h417.24l-95.994 95.994l22.627 22.627L494.498 256z"/></svg></button>
+            </div>
+            <div>
+                <img src="./img/tasty-1.jpg" alt="" class="max-sm:w-225 max-md:w-115">
+                <div class="pl-4">
+                    <ul class="flex gap-3 text-[#9da0a3] text-lg mt-5 max-sm:text-3xl max-sm:ml-85 max-sm:mt-10 max-sm:mb-6 max-md:text-xl">
+                        <li><a href="#">Healthy</a></li>
+                        <li><a href="#">Tasty</a></li>
+                    </ul>
+                    <p class="hover:text-[#ff6500] text-[26px] font-semibold pb-3 cursor-pointer duration-300 max-sm:text-5xl max-md:text-[28px]">Interesting ingredients can<br>come into play here</p>
+                    <h2 class="text-[#9da0a3] text-lg max-sm:text-3xl max-sm:mt-3 max-md:text-xl">July 29,2021</h2>
+                    <h3 class="text-lg py-2 max-sm:text-3xl max-md:text-xl">Eventually, you must also offer them<br>attractive and competitive tour...</h3>
+                    <button class="flex items-center gap-2 hover:gap-5 duration-300 text-[#ff6500] text-xl mt-4 font-semibold cursor-pointer max-sm:text-3xl max-sm:ml-75 max-sm:gap-3 max-md:text-2xl">Continue Reading<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" class="mt-1 max-sm:w-7 mt-2 max-sm:h-7 max-md:w-5 max-md:h-5" viewBox="0 0 512 512"><path fill="#ff6500" d="m359.873 121.377l-22.627 22.627l95.997 95.997H16v32.001h417.24l-95.994 95.994l22.627 22.627L494.498 256z"/></svg></button>
+                </div>
+            </div>
+            <div>
+                <img src="./img/tasty-2.jpg" alt="" class="max-sm:w-225 max-md:w-115">
+                <div class="pl-4">
+                    <ul class="flex gap-3 text-[#9da0a3] text-lg mt-5 max-sm:text-3xl max-sm:ml-85 max-sm:mt-10 max-sm:mb-6 max-md:text-xl">
+                        <li><a href="#">Healthy</a></li>
+                        <li><a href="#">Tasty</a></li>
+                    </ul>
+                    <p class="hover:text-[#ff6500] text-[26px] font-semibold pb-3 cursor-pointer duration-300 max-sm:text-5xl max-md:text-[28px]">Cooking as a whole<br>package item like it did</p>
+                    <h2 class="text-[#9da0a3] text-lg max-sm:text-3xl max-sm:mt-3 max-md:text-xl">July 26,2021</h2>
+                    <h3 class="text-lg py-2 max-sm:text-3xl max-md:text-xl">Rishi employee help you to take action for<br>best strategy...</h3>
+                    <button class="flex items-center gap-2 hover:gap-5 duration-300 text-[#ff6500] text-xl mt-4 font-semibold cursor-pointer max-sm:text-3xl max-sm:ml-75 max-sm:gap-3 max-md:text-2xl">Continue Reading<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" class="mt-1 max-sm:w-7 mt-2 max-sm:h-7 max-md:w-5 max-md:h-5" viewBox="0 0 512 512"><path fill="#ff6500" d="m359.873 121.377l-22.627 22.627l95.997 95.997H16v32.001h417.24l-95.994 95.994l22.627 22.627L494.498 256z"/></svg></button>
+                </div>
+            </div>
+        </div>
+    </div>   
+    <!--cook-->
+
+    <!--reservation-->
+    <div class="reservation w-398 h-270 flex flex-col justify-center items-center text-white max-sm:px-20 max-lg:px-30 max-xl:px-30">
+        <h1 class="text-[45px] text-center font-bold max-sm:text-[55px]">Make a Reservation</h1>
+        <p class="text-center text-xl mt-2 max-sm:text-2xl">It is a long established fact that a reader will be distracted by the read content of a<br>page when looking at its layout.</p>
+        <div class="bg-[#ffa66b] mt-20 py-15 px-10 text-xl max-sm:text-3xl">
+            <input type="text" placeholder="Full Name" class="border-2 px-35 pl-8 py-5 max-sm:px-45 max-sm:pl-8 max-md:px-45 max-md:pl-8"> <br>
+            <input type="datetime" placeholder="dd-mm-yyyy" name="" id="" class="border-2 my-8 px-35 pl-8 py-5 max-sm:px-45 max-sm:pl-8 max-md:px-45 max-md:pl-8"><br>
+            <input type="text" placeholder="Number of Seats" class="border-2 px-35 pl-8 py-5 max-sm:px-45 max-sm:pl-8 max-md:px-45 max-md:pl-8"> <br>
+            <input type="number" placeholder="Phone Number" class="border-2 px-35 pl-8 my-8 py-5 max-sm:px-45 max-sm:pl-8 max-md:px-45 max-md:pl-8"> <br>
+            <input type="email" placeholder="Email Address" class="border-2 px-35 pl-8 py-5 max-sm:px-45 max-sm:pl-8 max-md:px-45 max-md:pl-8"> <br>
+            <button class="bg-white rounded-md text-black w-105 text-[18px] py-5 my-8 max-sm:w-145 max-sm:text-2xl max-md:text-2xl max-md:w-115">Make a Reservation</button>
+        </div>
+    </div>
+    <!--reservation-->
+
+    <!--map-->
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d317482.43891665305!2d-0.11943100000000001!3d51.502843!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487604b900d26973%3A0x4291f3172409ea92!2slastminute.com%20London%20Eye!5e1!3m2!1sen!2sus!4v1747802893688!5m2!1sen!2sus" width="1585" height="540" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    <!--map-->
+
+    <!--visit-->
+    <div class="w-398 flex gap-20 py-20 text-lg px-50 max-sm:px-20 max-sm:flex-col max-sm:items-center max-lg:px-30 max-xl:px-30">
+        <div class="bg-[#202020] py-13 h-107 px-8 w-99 rounded-md mt-[-150px] max-sm:mt-10 max-sm:w-175 max-sm:text-center max-sm:h-157 max-sm:py-35">
+            <h1 class="text-[29px] text-white font-semibold max-sm:text-5xl">Planning To Visit?</h1>
+            <p class="text-[#A1A1A1] text-xl pt-8 pb-10 leading-8 max-sm:text-3xl">It is a long established fact that a<br>reader will be distracted by the<br>readable content of a page when<br>looking at its layout.</p>
+            <button class="py-4 mb-38 w-45 bg-[#fe6500] text-xl text-white rounded-lg hover:bg-white hover:text-[#fe6500] hover:border-1 cursor-pointer duration-300 max-sm:text-3xl max-sm:w-60 max-sm:py-5">Contact Us</button>
+        </div>
+        <div class="max-sm:flex max-sm:mt-20 max-sm:gap-40 flex gap-20">
+            <div class="text-[#3E3E3E]">
+                <h1 class="text-3xl text-black font-semibold max-sm:text-6xl">Opening Time</h1>
+                <ul class="mt-8 max-sm:text-3xl max-sm:mt-15">
+                    <li>Working Days</li>
+                    <li>9:00AM - 6:00PM</li>
+                </ul>
+                <div class="py-2 pb-4 text-2xl text-[#cccccc] max-sm:text-5xl max-sm:py-4 max-sm:pb-8">.......................................................</div>
+                <ul class="max-sm:text-3xl">
+                    <li>Saturday</li>
+                    <li>11:00AM - 5:00PM</li>
+                </ul>
+                <div class="py-2 pb-4 text-2xl text-[#cccccc] max-sm:text-5xl max-sm:py-4 max-sm:pb-8">.......................................................</div>
+                <ul class="max-sm:text-3xl">
+                    <li>Sunday</li>
+                    <li>Closed</li>
+                </ul>
+            </div>
+            <div class="w-[1px] h-85 bg-[#cccccc] max-sm:hidden"></div>
+            <div class="text-[#3E3E3E] max-sm:text-center max-sm:flex max-sm:flex-col max-sm:items-center">
+                <h1 class="text-3xl text-black font-semibold max-sm:text-6xl">Get In Touch</h1>
+                <h2 class="text-2xl pt-8 pb-3 max-sm:text-3xl">+123 456 7890</h2>
+                <h3 class="text-xl max-sm:text-3xl">info@example.com</h3>
+                <div class="flex gap-3 pt-8">
+                    <div class="border-2 border-[#E5E5E5] rounded-full p-2 hover:bg-[#ffa66b] cursor-pointer duration-300 hover:hideen max-sm:p-5"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" class="max-sm:w-10 max-sm:h-10" viewBox="0 0 24 24"><path fill="#000" d="M14 13.5h2.5l1-4H14v-2c0-1.03 0-2 2-2h1.5V2.14c-.326-.043-1.557-.14-2.857-.14C11.928 2 10 3.657 10 6.7v2.8H7v4h3V22h4z"/></svg></div>
+                    <div class="border-2 border-[#E5E5E5] rounded-full p-2 hover:bg-[#ffa66b] cursor-pointer duration-300 hover:hideen max-sm:p-5"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" class="max-sm:w-10 max-sm:h-10" viewBox="-2 -4 24 24"><path fill="#000" d="M20 1.907a8.3 8.3 0 0 1-2.356.637A4.07 4.07 0 0 0 19.448.31a8.4 8.4 0 0 1-2.607.98A4.12 4.12 0 0 0 13.846.015c-2.266 0-4.103 1.81-4.103 4.04q0 .476.106.92A11.7 11.7 0 0 1 1.393.754a3.96 3.96 0 0 0-.554 2.03a4.02 4.02 0 0 0 1.824 3.363A4.15 4.15 0 0 1 .805 5.64v.05c0 1.958 1.415 3.591 3.29 3.963a4.2 4.2 0 0 1-1.08.141q-.397 0-.773-.075a4.1 4.1 0 0 0 3.832 2.807a8.3 8.3 0 0 1-5.095 1.727q-.498-.001-.979-.056a11.73 11.73 0 0 0 6.289 1.818c7.547 0 11.673-6.157 11.673-11.496l-.014-.523A8.1 8.1 0 0 0 20 1.907"/></svg></div>
+                    <div class="border-2 border-[#E5E5E5] rounded-full p-2 hover:bg-[#ffa66b] cursor-pointer duration-300 hover:hideen max-sm:p-5"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" class="max-sm:w-10 max-sm:h-10" viewBox="0 0 16 16"><path fill="#000" d="M8 10.2a2.25 2.25 0 0 1 0-4.5a2.25 2.25 0 0 1 0 4.5"/><path fill="#000" fill-rule="evenodd" d="M5.08 1.05c.594-.031 1.57-.047 2.92-.047s2.33.016 2.92.047c.525.019 1.05.108 1.55.266c.511.182.975.476 1.36.86s.677.848.859 1.36a6.4 6.4 0 0 1 .282 1.56c.02.583.031 1.55.031 2.91s-.016 2.33-.047 2.92a6 6 0 0 1-.266 1.55a3.67 3.67 0 0 1-2.22 2.22a6 6 0 0 1-1.55.266q-.893.047-2.92.047c-2.027 0-2.33-.016-2.92-.047a5.2 5.2 0 0 1-1.55-.296a3.34 3.34 0 0 1-1.36-.828a3.65 3.65 0 0 1-.86-1.36a6 6 0 0 1-.266-1.55q-.047-.893-.047-2.92c0-2.027.016-2.33.047-2.92c.019-.525.108-1.05.266-1.55a3.66 3.66 0 0 1 2.22-2.22a6 6 0 0 1 1.55-.266zm6.19 2.47a.87.87 0 0 1 1.102.113a.88.88 0 0 1 .259.616a1 1 0 0 1-.275.616a.8.8 0 0 1-.6.26a.84.84 0 0 1-.616-.26a.87.87 0 0 1 .13-1.343zM6.26 4.97a3.4 3.4 0 0 1 1.75-.472a3.4 3.4 0 0 1 1.75.472c.53.307.971.748 1.28 1.28s.472 1.14.472 1.75a3.515 3.515 0 0 1-3.502 3.502A3.515 3.515 0 0 1 4.509 8c0-.615.163-1.22.471-1.75s.748-.971 1.28-1.28" clip-rule="evenodd"/></svg></div>
+                    <div class="border-2 border-[#E5E5E5] rounded-full p-2 hover:bg-[#ffa66b] cursor-pointer duration-300 hover:hideen max-sm:p-5"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" class="max-sm:w-10 max-sm:h-10" viewBox="0 0 448 512"><path fill="#000" d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3M447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2c-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3c94 0 111.28 61.9 111.28 142.3V448z"/></svg></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--visit-->
+
+    <!--footer-->
+    <footer class="w-398 bg-[#202020] pt-20 flex flex-col items-center px-50 max-sm:px-20 max-lg:px-30 max-xl:px-30 ">
+        <h1 class="text-[45px] text-white text-center font-bold max-sm:text-[60px]">Get News & Offers</h1>
+        <p class="text-center text-xl text-[#A1A1A1] pt-3 max-sm:text-3xl">It is a long established fact that a reader will be distracted by the read content of a<br>page when looking at its layout.</p>
+        <button class="py-3.5 w-45 bg-[#fe6500] text-xl text-white rounded-lg hover:bg-white hover:text-black hover:border-1 cursor-pointer duration-200 my-13 max-sm:text-3xl max-sm:w-60 max-sm:py-5">Contact Us</button>
+        <div class="w-full h-[1px] bg-[#2b2b2b]"></div> 
+        <img src="./img/footer-logo.png" alt="" class="pt-10 pb-8 ml-[-140px] max-sm:ml-0">               
+        <ul class="flex gap-5 text-[#A1A1A1] max-sm:text-xl">
+            <li class="text-[#fe6500]"><a href="#">Home</a></li>
+            <li class="hover:text-[#fe6500]"><a href="#">About</a></li>
+            <li class="hover:text-[#fe6500]"><a href="#">Menu</a></li>
+            <li class="hover:text-[#fe6500]"><a href="#">Testimonials</a></li>
+            <li class="hover:text-[#fe6500]"><a href="#">Blog</a></li>
+            <li class="hover:text-[#fe6500]"><a href="#">Contact</a></li>
+        </ul>
+        <div class="text-[#A1A1A1] flex gap-2 pt-13 pb-6 max-sm:text-xl">
+            Copyright © 2025
+            <span class="text-white">Restaurant</span>
+            - Powered by
+            <span class="text-white">Rishi Theme</span>
+        </div>                                                                                                                                                                    
+    </footer>
+    <!--footer-->
+</body>
+</html>

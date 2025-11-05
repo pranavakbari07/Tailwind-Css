@@ -1,0 +1,653 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>E-commerce</title>
+  <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+</head>
+<body>
+  <nav class="bg-white-800 sm:mx-40">
+    <div class="mx-auto px-2 sm:px-6 lg:px-8">
+      <div class="relative flex h-16 items-center justify-between">
+        <div class="flex flex-1 items-center justify-between sm:items-stretch sm:justify-start">
+          <div class="flex shrink-0 items-center">
+            <a href="#" class="rounded-md px-10 py-2 text-lg font-medium text-black" aria-current="page">Exclusive</a>
+          </div>
+          <div class="hidden sm:ml-6 sm:block">
+            <div class="flex space-x-5 py-4 px-5 mx-40 hidden sm:block">
+              <a href="#" class="rounded-md px-3 py-2 text-sm font-medium text-black-300 hover:bg-gray-700 hover:text-white"><u>Home</u></a>
+              <a href="#" class="rounded-md px-3 py-2 text-sm font-medium text-black-300 hover:bg-gray-700 hover:text-white">Contact</a>
+              <a href="#" class="rounded-md px-3 py-2 text-sm font-medium text-black-300 hover:bg-gray-700 hover:text-white">About</a>
+              <a href="#" class="rounded-md px-3 py-2 text-sm font-medium text-black-300 hover:bg-gray-700 hover:text-white">Sign Up</a>
+            </div>
+          </div>
+        </div>
+        <div class="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
+          <span class="bg-gray-100 items-center rounded-sm h-10 w-60 flex justify-around">What are you looking for?
+            <img src="/icon/search-interface-symbol.png" class="h-4" alt="">
+          </span>
+          <span class="h-5 flex justify-evenly w-30 hidden sm:flex">
+            <img src="/icon/heart.png" alt="">
+            <img src="/icon/shopping-cart.png" alt="">
+          </span>
+        </div>
+      </div>
+    </div>
+    <div class="sm:hidden" id="mobile-menu">
+      <div class="space-y-1 px-2 pt-2 pb-3">
+        <a href="#" class="block rounded-md bg-gray-900 px-3 py-2 text-base font-medium text-white" aria-current="page">Dashboard</a>
+        <a href="#" class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Team</a>
+        <a href="#" class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Projects</a>
+        <a href="#" class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Calendar</a>
+      </div>
+    </div>
+  </nav>
+  <hr class="my-5">
+  <div class="flex justify-evenly">
+  <div class="flex w-55 justify-between ms-60 hidden sm:flex">
+   <div class="my-10">
+    <span class="flex justify-between w-50"> <h4>Woman's Fashion</h4>
+      <img src="/icon/DropDown.png" alt="">
+     </span>
+     <span class="flex justify-between w-50 py-2"> <h4>Men's Fashion</h4>
+      <img src="/icon/DropDown.png" alt="">
+    </span>
+      <h4>Electronics</h4>
+      <h4 class="py-2">Home & Lifestyle</h4>
+      <h4>Medicine</h4>
+      <h4 class="py-2">Sports & Outdoor</h4>
+      <h4>Baby's Toys</h4>
+      <h4 class="py-2">Groceries</h4>
+      <h4>Health & Beauty</h4>
+   </div>
+   <span class="inline-block bg-gray-100 w-1 h-80"></span>
+    </div>
+    <img src="/img/banner1.png" class="sm:my-10 sm:ms-20 sm:h-75 sm:me-100 sm:w-200 ms-5 me-0 w-150" alt="">
+  </div>
+  <div class="flex items-center text-red-500 font-medium sm:mx-60 my-20 mx-20">
+    <span class="bg-red-500 h-15 w-8 rounded-md mx-4"></span>
+    <h4>Today's</h4>
+  </div>
+  <div class="flex justify-between items-center sm:text-2xl sm:font-medium mx-20 my-5 sm:mx-60">
+    <div class="flex items-center">
+      <h2>Flash Sales</h2>
+      <div class="sm:ms-30 ms-10 text-sm me-5">
+        <h4 class="sm:text-base">Days</h4>
+        <h2>03</h2>
+      </div>
+      <span class="py-5 w-5"><img src="/icon/Semiclone.png" alt=""></span>
+      <div class="mx-5 text-sm">
+        <h4 class="sm:text-base">Hours</h4>
+        <h2>23</h2>
+      </div>
+      <span class="py-5 w-5"><img src="/icon/Semiclone.png" alt=""></span>
+      <div class="mx-5 text-sm">
+        <h4 class="sm:text-base">Minutes</h4>
+        <h2>19</h2>
+      </div>
+      <span class="py-5 w-5"><img src="/icon/Semiclone.png" alt=""></span>
+      <div class="mx-5 text-sm">
+        <h4 class="sm:text-base">Seconds</h4>
+        <h2>56</h2>
+      </div>
+    </div>
+    <div class="gap-2 sm:flex hidden">
+      <img src="/icon/Fill With Left Arrow.png" alt="">
+      <img src="/icon/Fill with Right Arrow.png" alt="">
+    </div>
+  </div>
+  <div class="flex justify-evenly mx-15 sm:mx-60 flex-wrap">
+    <div>
+      <div class="h-60 w-70 flex justify-between bg-gray-100">
+        <span class="bg-red-500 w-12 text-white h-6 absolute text-center py-0.5 my-5 mx-2 text-sm rounded-sm">-40%</span>
+          <div class="mx-10 my-20">
+            <img src="/img/Frame 611.png" alt="">
+          </div>
+         <div class="my-3 mx-2">
+          <img src="/icon/Fill Heart.png" class="h-8 my-2" alt="">
+          <img src="/icon/Fill Eye.png" class="h-8" alt="">
+         </div>
+      </div>
+      <div class="py-3">
+       <h4>HAVIT HV-G92 Gamepad</h4>
+        <span class="text-red-500 mx-2">$120</span>
+        <span class="line-through">$160</span>
+      <div class="flex gap-3 items-center">
+        <span>
+          <img src="/icon/Five star.png" alt="">
+        </span>
+        <span>(88)</span>
+      </div>
+      </div>
+    </div>
+    <div>
+      <div class="h-60 w-70 bg-gray-100">
+       <div class="flex justify-between">
+        <span class="bg-red-500 w-12 text-white h-6 absolute text-center py-0.5 my-5 mx-2 text-sm rounded-sm">-40%</span>
+        <div class="mx-10 py-14">
+          <img src="/img/ak-900-01-500x500 1.png" class="w-60 h-21" alt="">
+        </div>
+       <div class="my-3 mx-2">
+        <img src="/icon/Fill Heart.png" class="h-8 my-2" alt="">
+        <img src="/icon/Fill Eye.png" class="h-8" alt="">
+       </div>
+       </div>
+         <button class="bg-black w-70 h-10 text-white">Add To Cart</button>
+      </div>
+      <div class="py-3">
+       <h4>AK-900 Wired Keyboard</h4>
+        <span class="text-red-500 mx-2">$960</span>
+        <span class="line-through">$1160</span>
+      <div class="flex gap-3 items-center">
+        <span>
+          <img src="/icon/Four Star.png" alt="">
+        </span>
+        <span>(75)</span>
+      </div>
+      </div>
+    </div>
+    <div>
+      <div class="h-60 w-70 flex justify-between bg-gray-100">
+        <span class="bg-red-500 w-12 text-white h-6 absolute text-center py-0.5 my-5 mx-2 text-sm rounded-sm">-40%</span>
+          <div class="mx-10 my-20">
+            <img src="/img/Frame 613.png" alt="">
+          </div>
+         <div class="my-3 mx-2">
+          <img src="/icon/Fill Heart.png" class="h-8 my-2" alt="">
+          <img src="/icon/Fill Eye.png" class="h-8" alt="">
+         </div>
+      </div>
+      <div class="py-3">
+       <h4>IPS LCD Gaming Monitor</h4>
+        <span class="text-red-500 mx-2">$370</span>
+        <span class="line-through">$400</span>
+      <div class="flex gap-3 items-center">
+        <span>
+          <img src="/icon/Five star.png" alt="">
+        </span>
+        <span>(99)</span>
+      </div>
+      </div>
+    </div>
+    <div>
+      <div class="h-60 w-70 flex justify-between bg-gray-100">
+        <span class="bg-red-500 w-12 text-white h-6 absolute text-center py-0.5 my-5 mx-2 text-sm rounded-sm">-40%</span>
+          <div class="mx-10 my-20">
+            <img src="/img/Frame 614.png" alt="">
+          </div>
+         <div class="my-3 mx-2">
+          <img src="/icon/Fill Heart.png" class="h-8 my-2" alt="">
+          <img src="/icon/Fill Eye.png" class="h-8" alt="">
+         </div>
+      </div>
+      <div class="py-3">
+       <h4>S-Series Comfort Chair</h4>
+        <span class="text-red-500 mx-2">$375</span>
+        <span class="line-through">$400</span>
+      <div class="flex gap-3 items-center">
+        <span>
+          <img src="/icon/Four Half Star.png" alt="">
+        </span>
+        <span>(99)</span>
+      </div>
+      </div>
+    </div>
+  </div>
+  <div class="sm:block mx-180 my-10 hidden">
+    <span class="bg-red-500 text-white h-10 w-50 text-center py-2 rounded-sm absolute">View All Products</span>
+  </div><br><br><br><br><hr class="sm:mx-60 bg-gray-100 mx-0">
+
+  <div class="flex items-center text-red-500 font-medium mx-20 mt-20 mb-10 sm:mx-60">
+    <span class="bg-red-500 h-15 w-8 rounded-md mx-4"></span>
+    <h4>Categories</h4>
+  </div>
+  <div class="flex justify-between items-center text-2xl font-medium mx-20 my-5 sm:mx-60">
+    <div class="flex items-center">
+      <h2>Browse By Category</h2>
+    </div>
+    <div class="flex gap-2 sm:flex hidden">
+      <img src="/icon/Fill With Left Arrow.png" alt="">
+      <img src="/icon/Fill with Right Arrow.png" alt="">
+    </div>
+  </div>
+  <div class="flex justify-evenly mx-20 flex-wrap sm:mx-60 gap-2">
+    <div>
+      <div class="h-35 w-40 bg-white-800 border-1 rounded-sm">
+          <div class="text-center">
+            <img src="/img/Category-CellPhone.png" class="py-6 mx-12" alt="">
+            <h4>Phones</h4>
+          </div>
+      </div>
+    </div>
+    <div>
+      <div class="h-35 w-40 bg-white-800 border-1 rounded-sm">
+        <div class="text-center">
+          <img src="/img/Category-Computer.png" class="py-6 mx-12" alt="">
+          <h4>Computers</h4>
+        </div>
+    </div>
+    </div>
+    <div>
+      <div class="h-35 w-40 bg-white-800 border-1 rounded-sm">
+          <div class="text-center">
+            <img src="/img/Category-smartWatch.png" class="py-6 mx-12" alt="">
+            <h4>smartWatch</h4>
+          </div>
+      </div>
+    </div>
+    <div>
+      <div class="h-35 w-40 bg-red-500 rounded-sm">
+          <div class="text-center text-white">
+            <img src="/img/Category-Camera.png" class="py-6 mx-12" alt="">
+            <h4>Camera</h4>
+          </div>
+      </div>
+    </div>
+    <div>
+      <div class="h-35 w-40 bg-white-800 border-1 rounded-sm">
+          <div class="text-center">
+            <img src="/img/Category-Headphone.png" class="py-6 mx-12" alt="">
+            <h4>HeadPhones</h4>
+          </div>
+      </div>
+    </div>
+    <div>
+      <div class="h-35 w-40 bg-white-800 border-1 rounded-sm">
+          <div class="text-center">
+            <img src="/img/Category-Gamepad.png" class="py-6 mx-12" alt="">
+            <h4>Gaming</h4>
+          </div>
+      </div>
+    </div>
+  </div>
+  <br><br><hr class="sm:mx-60 bg-gray-100 mx-0">
+
+  <div class="flex items-center text-red-500 font-medium sm:mx-60 mt-20 mx-20">
+    <span class="bg-red-500 h-15 w-8 rounded-md mx-4"></span>
+    <h4>This Month</h4>
+  </div>
+  <div class="flex justify-between items-center sm:text-2xl sm:font-medium sm:mx-60 my-5 mx-20">
+    <div class="flex items-center">
+      <h2>Best Selling Product</h2>
+    </div>
+    <div class="me-40 pb-6 sm:block hidden">
+      <span class="bg-red-500 text-white h-10 w-35 text-center py-2 text-base rounded-sm absolute">View All</span>
+    </div>
+  </div>
+  <div class="flex justify-evenly sm:mx-60 flex-wrap mx-15">
+    <div>
+      <div class="h-60 w-70 flex justify-between bg-gray-100">
+          <div class="mx-10 my-20">
+            <img src="/img/Frame 605.png" alt="">
+          </div>
+         <div class="my-3 mx-2">
+          <img src="/icon/Fill Heart.png" class="h-8 my-2" alt="">
+          <img src="/icon/Fill Eye.png" class="h-8" alt="">
+         </div>
+      </div>
+      <div class="py-3">
+       <h4>The north coat</h4>
+        <span class="text-red-500 mx-2">$260</span>
+        <span class="line-through">$360</span>
+      <div class="flex gap-3 items-center">
+        <span>
+          <img src="/icon/Five star.png" alt="">
+        </span>
+        <span>(65)</span>
+      </div>
+      </div>
+    </div>
+    <div>
+      <div class="h-60 w-70 bg-gray-100">
+       <div class="flex justify-between">
+        <div class="mx-10 py-20">
+          <img src="/img/Frame 606.png" alt="">
+        </div>
+       <div class="my-3 mx-2">
+        <img src="/icon/Fill Heart.png" class="h-8 my-2" alt="">
+        <img src="/icon/Fill Eye.png" class="h-8" alt="">
+       </div>
+       </div>
+      </div>
+      <div class="py-3">
+       <h4>Gucci duffle bag</h4>
+        <span class="text-red-500 mx-2">$960</span>
+        <span class="line-through">$1160</span>
+      <div class="flex gap-3 items-center">
+        <span>
+          <img src="/icon/Four Half Star.png" alt="">
+        </span>
+        <span>(65)</span>
+      </div>
+      </div>
+    </div>
+    <div>
+      <div class="h-60 w-70 flex justify-between bg-gray-100">
+          <div class="mx-10 my-20">
+            <img src="/img/Frame 610.png" alt="">
+          </div>
+         <div class="my-3 mx-2">
+          <img src="/icon/Fill Heart.png" class="h-8 my-2" alt="">
+          <img src="/icon/Fill Eye.png" class="h-8" alt="">
+         </div>
+      </div>
+      <div class="py-3">
+       <h4>RGB liquid CPU Cooler</h4>
+        <span class="text-red-500 mx-2">$160</span>
+        <span class="line-through">$170</span>
+      <div class="flex gap-3 items-center">
+        <span>
+          <img src="/icon/Four Half Star.png" alt="">
+        </span>
+        <span>(65)</span>
+      </div>
+      </div>
+    </div>
+    <div>
+      <div class="h-60 w-70 flex justify-between bg-gray-100">
+          <div class="mx-10 my-10">
+            <img src="/img/sam-moghadam-khamseh-L_7MQsHl_aU-unsplash 1.png" alt="">
+          </div>
+         <div class="my-3 mx-2">
+          <img src="/icon/Fill Heart.png" class="h-8 my-2" alt="">
+          <img src="/icon/Fill Eye.png" class="h-8" alt="">
+         </div>
+      </div>
+      <div class="py-3">
+       <h4>small BookSelf</h4>
+        <span class="text-red-500 mx-2">$360</span>
+      <div class="flex gap-3 items-center">
+        <span>
+          <img src="/icon/Five star.png" alt="">
+        </span>
+        <span>(65)</span>
+      </div>
+      </div>
+    </div>
+  </div>
+  <div>
+    <img src="/img/Frame 600.png" class="my-30 sm:mx-60 mx-5 sm:w-300 w-150" alt="">
+  </div>
+
+  <div class="flex items-center text-red-500 font-medium sm:mx-60 mt-20 mx-20">
+    <span class="bg-red-500 h-15 w-8 rounded-md mx-4"></span>
+    <h4>Our Products</h4>
+  </div>
+  <div class="flex justify-between items-center sm:text-2xl sm:font-medium sm:mx-60 my-5 mx-20">
+    <div class="flex items-center">
+      <h2>Explore Our Products</h2>
+    </div>
+    <div class="flex gap-2 sm:flex hidden">
+      <img src="/icon/Fill With Left Arrow.png" alt="">
+      <img src="/icon/Fill with Right Arrow.png" alt="">
+    </div>
+  </div>
+  <div class="flex flex-wrap justify-evenly sm:mx-60 mx-20">
+    <div>
+      <div class="h-60 w-70 flex justify-between bg-gray-100">
+          <div class="mx-10 my-20">
+            <img src="/img/Frame 604.png" alt="">
+          </div>
+         <div class="my-3 mx-2">
+          <img src="/icon/Fill Heart.png" class="h-8 my-2" alt="">
+          <img src="/icon/Fill Eye.png" class="h-8" alt="">
+         </div>
+      </div>
+      <div class="py-3">
+       <h4>Breed Dry Dog Food</h4>
+        <span class="text-red-500 mx-2">$100</span>
+      <div class="flex gap-3 items-center">
+        <span>
+          <img src="/icon/Four Star.png" alt="">
+        </span>
+        <span>(35)</span>
+      </div>
+      </div>
+    </div>
+    <div>
+      <div class="h-60 w-70 bg-gray-100">
+       <div class="flex justify-between">
+        <div class="mx-10 py-6">
+          <img src="/img/Frame 604-1.png" alt="">
+        </div>
+       <div class="my-3 mx-2">
+        <img src="/icon/Fill Heart.png" class="h-8 my-2" alt="">
+        <img src="/icon/Fill Eye.png" class="h-8" alt="">
+       </div>
+       </div>
+         <button class="bg-black w-70 h-10 text-white">Add To Cart</button>
+      </div>
+      <div class="py-3">
+       <h4>CANON EOS DSLR Camera</h4>
+        <span class="text-red-500 mx-2">$360</span>
+      <div class="flex gap-3 items-center">
+        <span>
+          <img src="/icon/Four Star.png" alt="">
+        </span>
+        <span>(95)</span>
+      </div>
+      </div>
+    </div>
+    <div>
+      <div class="h-60 w-70 flex justify-between bg-gray-100">
+          <div class="mx-10 my-20">
+            <img src="/img/Frame 604-2.png" alt="">
+          </div>
+         <div class="my-3 mx-2">
+          <img src="/icon/Fill Heart.png" class="h-8 my-2" alt="">
+          <img src="/icon/Fill Eye.png" class="h-8" alt="">
+         </div>
+      </div>
+      <div class="py-3">
+       <h4>ASUS FHD Gaming Laptopr</h4>
+        <span class="text-red-500 mx-2">$700</span>
+      <div class="flex gap-3 items-center">
+        <span>
+          <img src="/icon/Five star.png" alt="">
+        </span>
+        <span>(325)</span>
+      </div>
+      </div>
+    </div>
+    <div>
+      <div class="h-60 w-70 flex justify-between bg-gray-100">
+          <div class="mx-10 my-20">
+            <img src="/img/curology-j7pKVQrTUsm-unsplash 1.png" alt="">
+          </div>
+         <div class="my-3 mx-2">
+          <img src="/icon/Fill Heart.png" class="h-8 my-2" alt="">
+          <img src="/icon/Fill Eye.png" class="h-8" alt="">
+         </div>
+      </div>
+      <div class="py-3">
+       <h4>Curology Product Set </h4>
+        <span class="text-red-500 mx-2">$500</span>
+      <div class="flex gap-3 items-center">
+        <span>
+          <img src="/icon/Five star.png" alt="">
+        </span>
+        <span>(145)</span>
+      </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="flex flex-wrap justify-evenly sm:mx-60 mx-20">
+    <div>
+      <div class="h-60 w-70 flex justify-between bg-gray-100">
+          <div class="mx-10 my-20">
+            <img src="/img/Frame 608.png" alt="">
+          </div>
+         <div class="my-3 mx-2">
+          <img src="/icon/Fill Heart.png" class="h-8 my-2" alt="">
+          <img src="/icon/Fill Eye.png" class="h-8" alt="">
+         </div>
+      </div>
+      <div class="py-3">
+       <h4>Kids Electric Car</h4>
+        <span class="text-red-500 mx-2">$960</span>
+      <div class="flex gap-3 items-center">
+        <span>
+          <img src="/icon/Four Star.png" alt="">
+        </span>
+        <span>(65)</span>
+      </div>
+      <img src="/img/Colour Chnage.png" alt="">
+      </div>
+    </div>
+    <div>
+      <div class="h-60 w-70 bg-gray-100">
+       <div class="flex justify-between">
+        <div class="mx-10 my-20">
+          <img src="/img/Frame 608-1.png" alt="">
+        </div>
+       <div class="my-3 mx-2">
+        <img src="/icon/Fill Heart.png" class="h-8 my-2" alt="">
+        <img src="/icon/Fill Eye.png" class="h-8" alt="">
+       </div>
+       </div>
+      </div>
+      <div class="py-3">
+       <h4>Jr. Zoom Soccer Cleats</h4>
+        <span class="text-red-500 mx-2">$1160</span>
+      <div class="flex gap-3 items-center">
+        <span>
+          <img src="/icon/Four Star.png" alt="">
+        </span>
+        <span>(35)</span>
+      </div>
+      <img src="/img/Colour Chnage-1.png" alt="">
+      </div>
+    </div>
+    <div>
+      <div class="h-60 w-70 flex justify-between bg-gray-100">
+          <div class="mx-10 my-20">
+            <img src="/img/GP11_PRD3 1.png" alt="">
+          </div>
+         <div class="my-3 mx-2">
+          <img src="/icon/Fill Heart.png" class="h-8 my-2" alt="">
+          <img src="/icon/Fill Eye.png" class="h-8" alt="">
+         </div>
+      </div>
+      <div class="py-3">
+       <h4>GP11 Shooter USB Gamepad</h4>
+        <span class="text-red-500 mx-2">$660</span>
+      <div class="flex gap-3 items-center">
+        <span>
+          <img src="/icon/Five star.png" alt="">
+        </span>
+        <span>(555)</span>
+      </div>
+      <img src="/img/Colour Chnage-2.png" alt="">
+      </div>
+    </div>
+    <div>
+      <div class="h-60 w-70 flex justify-between bg-gray-100">
+          <div class="mx-10 my-20">
+            <img src="/img/Frame 608-2.png" alt="">
+          </div>
+         <div class="my-3 mx-2">
+          <img src="/icon/Fill Heart.png" class="h-8 my-2" alt="">
+          <img src="/icon/Fill Eye.png" class="h-8" alt="">
+         </div>
+      </div>
+      <div class="py-3">
+       <h4>Quilted Satin Jacket </h4>
+        <span class="text-red-500 mx-2">$660</span>
+      <div class="flex gap-3 items-center">
+        <span>
+          <img src="/icon/Five star.png" alt="">
+        </span>
+        <span>(55)</span>
+      </div>
+      <img src="/img/Colour Chnage-2.png" alt="">
+      </div>
+    </div>
+  </div>
+
+  <div class="mx-50 my-10 sm:mx-180">
+    <span class="bg-red-500 text-white h-10 w-50 text-center py-2 rounded-sm absolute">View All Products</span>
+  </div>
+  <div class="flex items-center text-red-500 font-medium mx-20 mt-40 sm:mx-60">
+    <span class="bg-red-500 h-15 w-8 rounded-md mx-4"></span>
+    <h4>Featured</h4>
+  </div>
+  <div class="flex justify-between items-center sm:text-2xl sm:font-medium mx-35 my-5 sm:mx-60">
+    <div class="flex items-center">
+      <h2>New Arrival</h2>
+    </div>
+  </div>
+  <div class="flex justify-between mx-10 sm:mx-60">
+    <img src="/img/Frame 684.png" alt="">
+    <div class="sm:block hidden">
+      <img src="/img/Frame 685.png" alt="">
+      <div class="flex justify-between pt-10">
+        <img src="/img/Frame 686.png" alt="">
+        <img src="/img/Frame 687.png" alt="">
+      </div>
+    </div>
+  </div>
+  <div class="flex justify-around sm:mx-60 mt-40 font-medium mx-15">
+    <div>
+      <img src="/icon/Services.png" class="mx-16 mb-3" alt="">
+      <h4 class="text-xl sm:block hidden">FREE AND FAST DELIVERY</h4>
+      <p class="text-sm sm:block hidden">Free delivery for all orders over $140</p>
+    </div>
+    <div>
+      <img src="/icon/Services-1.png" class="mx-16 mb-3" alt="">
+      <h4 class="text-xl sm:block hidden">24/7 CUSTOMER SERVICE</h4>
+      <p class="text-sm sm:block hidden">Friendly 24/7 customer support</p>
+    </div>
+    <div>
+      <img src="/icon/Services-2.png" class="mx-16 mb-3" alt="">
+      <h4 class="text-xl sm:block hidden">MONEY BACK GUARANTEE</h4>
+      <p class="text-sm sm:block hidden">We reurn money within 30 days</p>
+    </div>
+  </div>
+
+  <div class="mt-30 bg-black text-white h-80 w-100% py-10">
+    <div class="flex justify-around">
+      <div class="sm:block hidden">
+        <h2 class="font-medium text-2xl">Exclusive</h2>
+        <h4 class="font-medium text-lg py-3">Subscribe</h4>
+        <p class="pb-3">Get 10% off your first order</p>
+        <div class="border-1 rounded-sm h-10 flex justify-around items-center">
+          <span class="text-gray-500">Enter your email</span>
+          <img src="/icon/Vector.png" class="h-5" alt="">
+        </div>
+      </div>
+      <div class="sm:block hidden">
+        <h2 class="font-medium text-2xl">Support</h2>
+        <p class="py-3">111 Bijoy sarani, Dhaka,<br>DH 1515, Bangladesh.</p>
+        <p class="pb-3">exclusive@gmail.com</p>
+        <p>+88015-88888-9999</p>
+      </div>
+      <div class="sm:block hidden">
+        <h2 class="font-medium text-2xl">Account</h2>
+        <p class="py-3">My Account</p>
+        <p class="pb-3">Login / Register</p>
+        <p>Cart</p>
+        <p>Wishlist</p>
+        <p>Shop</p>
+      </div>
+      <div class="sm:block hidden">
+        <h2 class="font-medium text-2xl">Quick Link</h2>
+        <p class="py-3">Privacy Policy</p>
+        <p class="pb-3">Terms Of Use</p>
+        <p>FAQ</p>
+        <p>Contact</p>
+      </div>
+      <div>
+        <h2 class="font-medium text-2xl">Download App</h2>
+        <p class="py-3">Save $3 with App New User Only</p>
+       <img src="/icon/Frame 719.png" alt="">
+       <img src="/icon/Frame 741.png" class="py-3" alt="">
+      </div>
+    </div><br><hr>
+    <div class="text-center py-2">
+      <p class="text-gray-300">© Copyright Rimel 2022. All right reserved</p>
+    </div>
+  </div>
+</body>
+</html>

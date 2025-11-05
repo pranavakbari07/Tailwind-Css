@@ -1,0 +1,6 @@
+*{
+    font-family: sans-serif;
+}
+.input ::placeholder{
+    font-size: 14px;
+}

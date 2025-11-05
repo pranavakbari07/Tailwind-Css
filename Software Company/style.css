@@ -1,0 +1,39 @@
+body{
+    font-family: sans-serif;
+}
+.font{
+ font-family: "Playwrite AU SA", cursive;
+}
+.button{
+    background: linear-gradient(#6675F7 0%, #57007B  100%);
+}
+.product{
+    color: #ea64ae; 
+    background-image: linear-gradient(45deg, #ea64ae 44%, #0D1C9F 73%); 
+    background-clip: text; 
+    -webkit-background-clip: text; 
+    -webkit-text-fill-color: transparent; 
+}
+.teams{
+    color: #ea64ae; 
+    background-image: linear-gradient(45deg, #F7666F 44%, #406AFF 73%); 
+    background-clip: text; 
+    -webkit-background-clip: text; 
+    -webkit-text-fill-color: transparent; 
+}
+.web{
+    color: #ea64ae; 
+    background-image: linear-gradient(45deg, #F76680 44%, #57007B 73%); 
+    background-clip: text; 
+    -webkit-background-clip: text; 
+    -webkit-text-fill-color: transparent; 
+}
+.box{
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.span{
+    background-image: linear-gradient(45deg, #ea64ae 44%, #0D1C9F 73%); 
+}
+.icon{
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}

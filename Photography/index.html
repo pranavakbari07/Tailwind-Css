@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photography</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+</head>
+<body>
+    <!--hero & nav-->
+    <div class="bg h-165 text-white max-sm:w-232 max-md:w-232">
+        <!--nav-->
+        <nav class="nav px-25 py-5 flex items-center justify-between max-sm:px-10 max-md:px-10 max-xl:px-10">
+            <img src="./img/logo.png" alt="" class="w-45">
+            <ul class="flex gap-5 items-center text-sm">
+                <li class="flex items-center max-sm:hidden max-md:hidden max-lg:hidden"><a href="#">HOME</a><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"><g fill="none" fill-rule="evenodd"><path d="M24 0v24H0V0zM12.593 23.258l-.011.002l-.071.035l-.02.004l-.014-.004l-.071-.035q-.016-.005-.024.005l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427q-.004-.016-.017-.018m.265-.113l-.013.002l-.185.093l-.01.01l-.003.011l.018.43l.005.012l.008.007l.201.093q.019.005.029-.008l.004-.014l-.034-.614q-.005-.019-.02-.022m-.715.002a.02.02 0 0 0-.027.006l-.006.014l-.034.614q.001.018.017.024l.015-.002l.201-.093l.01-.008l.004-.011l.017-.43l-.003-.012l-.01-.01z"/><path fill="#fff" d="M13.06 16.06a1.5 1.5 0 0 1-2.12 0l-5.658-5.656a1.5 1.5 0 1 1 2.122-2.121L12 12.879l4.596-4.596a1.5 1.5 0 0 1 2.122 2.12l-5.657 5.658Z"/></g></svg></li>
+                <li class="flex items-center max-sm:hidden max-md:hidden max-lg:hidden"><a href="#">PAGES</a><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"><g fill="none" fill-rule="evenodd"><path d="M24 0v24H0V0zM12.593 23.258l-.011.002l-.071.035l-.02.004l-.014-.004l-.071-.035q-.016-.005-.024.005l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427q-.004-.016-.017-.018m.265-.113l-.013.002l-.185.093l-.01.01l-.003.011l.018.43l.005.012l.008.007l.201.093q.019.005.029-.008l.004-.014l-.034-.614q-.005-.019-.02-.022m-.715.002a.02.02 0 0 0-.027.006l-.006.014l-.034.614q.001.018.017.024l.015-.002l.201-.093l.01-.008l.004-.011l.017-.43l-.003-.012l-.01-.01z"/><path fill="#fff" d="M13.06 16.06a1.5 1.5 0 0 1-2.12 0l-5.658-5.656a1.5 1.5 0 1 1 2.122-2.121L12 12.879l4.596-4.596a1.5 1.5 0 0 1 2.122 2.12l-5.657 5.658Z"/></g></svg></li>
+                <li class="flex items-center max-sm:hidden max-md:hidden max-lg:hidden"><a href="#">BLOG</a><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"><g fill="none" fill-rule="evenodd"><path d="M24 0v24H0V0zM12.593 23.258l-.011.002l-.071.035l-.02.004l-.014-.004l-.071-.035q-.016-.005-.024.005l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427q-.004-.016-.017-.018m.265-.113l-.013.002l-.185.093l-.01.01l-.003.011l.018.43l.005.012l.008.007l.201.093q.019.005.029-.008l.004-.014l-.034-.614q-.005-.019-.02-.022m-.715.002a.02.02 0 0 0-.027.006l-.006.014l-.034.614q.001.018.017.024l.015-.002l.201-.093l.01-.008l.004-.011l.017-.43l-.003-.012l-.01-.01z"/><path fill="#fff" d="M13.06 16.06a1.5 1.5 0 0 1-2.12 0l-5.658-5.656a1.5 1.5 0 1 1 2.122-2.121L12 12.879l4.596-4.596a1.5 1.5 0 0 1 2.122 2.12l-5.657 5.658Z"/></g></svg></li>
+                <li class="flex items-center max-sm:hidden max-md:hidden max-lg:hidden"><a href="#">POST LAYOUT</a><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"><g fill="none" fill-rule="evenodd"><path d="M24 0v24H0V0zM12.593 23.258l-.011.002l-.071.035l-.02.004l-.014-.004l-.071-.035q-.016-.005-.024.005l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427q-.004-.016-.017-.018m.265-.113l-.013.002l-.185.093l-.01.01l-.003.011l.018.43l.005.012l.008.007l.201.093q.019.005.029-.008l.004-.014l-.034-.614q-.005-.019-.02-.022m-.715.002a.02.02 0 0 0-.027.006l-.006.014l-.034.614q.001.018.017.024l.015-.002l.201-.093l.01-.008l.004-.011l.017-.43l-.003-.012l-.01-.01z"/><path fill="#fff" d="M13.06 16.06a1.5 1.5 0 0 1-2.12 0l-5.658-5.656a1.5 1.5 0 1 1 2.122-2.121L12 12.879l4.596-4.596a1.5 1.5 0 0 1 2.122 2.12l-5.657 5.658Z"/></g></svg></li>
+                <li class="flex items-center max-sm:hidden max-md:hidden max-lg:hidden"><a href="#">ALBUM</a><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"><g fill="none" fill-rule="evenodd"><path d="M24 0v24H0V0zM12.593 23.258l-.011.002l-.071.035l-.02.004l-.014-.004l-.071-.035q-.016-.005-.024.005l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427q-.004-.016-.017-.018m.265-.113l-.013.002l-.185.093l-.01.01l-.003.011l.018.43l.005.012l.008.007l.201.093q.019.005.029-.008l.004-.014l-.034-.614q-.005-.019-.02-.022m-.715.002a.02.02 0 0 0-.027.006l-.006.014l-.034.614q.001.018.017.024l.015-.002l.201-.093l.01-.008l.004-.011l.017-.43l-.003-.012l-.01-.01z"/><path fill="#fff" d="M13.06 16.06a1.5 1.5 0 0 1-2.12 0l-5.658-5.656a1.5 1.5 0 1 1 2.122-2.121L12 12.879l4.596-4.596a1.5 1.5 0 0 1 2.122 2.12l-5.657 5.658Z"/></g></svg></li>
+                <li class="flex items-center max-sm:hidden max-md:hidden max-lg:hidden"><a href="#">GALLERY</a><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"><g fill="none" fill-rule="evenodd"><path d="M24 0v24H0V0zM12.593 23.258l-.011.002l-.071.035l-.02.004l-.014-.004l-.071-.035q-.016-.005-.024.005l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427q-.004-.016-.017-.018m.265-.113l-.013.002l-.185.093l-.01.01l-.003.011l.018.43l.005.012l.008.007l.201.093q.019.005.029-.008l.004-.014l-.034-.614q-.005-.019-.02-.022m-.715.002a.02.02 0 0 0-.027.006l-.006.014l-.034.614q.001.018.017.024l.015-.002l.201-.093l.01-.008l.004-.011l.017-.43l-.003-.012l-.01-.01z"/><path fill="#fff" d="M13.06 16.06a1.5 1.5 0 0 1-2.12 0l-5.658-5.656a1.5 1.5 0 1 1 2.122-2.121L12 12.879l4.596-4.596a1.5 1.5 0 0 1 2.122 2.12l-5.657 5.658Z"/></g></svg></li>
+                <li class="flex items-center max-sm:hidden max-md:hidden max-lg:hidden"><a href="#">CONTACT US</a><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"><g fill="none" fill-rule="evenodd"><path d="M24 0v24H0V0zM12.593 23.258l-.011.002l-.071.035l-.02.004l-.014-.004l-.071-.035q-.016-.005-.024.005l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427q-.004-.016-.017-.018m.265-.113l-.013.002l-.185.093l-.01.01l-.003.011l.018.43l.005.012l.008.007l.201.093q.019.005.029-.008l.004-.014l-.034-.614q-.005-.019-.02-.022m-.715.002a.02.02 0 0 0-.027.006l-.006.014l-.034.614q.001.018.017.024l.015-.002l.201-.093l.01-.008l.004-.011l.017-.43l-.003-.012l-.01-.01z"/><path fill="#fff" d="M13.06 16.06a1.5 1.5 0 0 1-2.12 0l-5.658-5.656a1.5 1.5 0 1 1 2.122-2.121L12 12.879l4.596-4.596a1.5 1.5 0 0 1 2.122 2.12l-5.657 5.658Z"/></g></svg></li>
+                <li class="max-sm:flex max-md:flex max-lg:flex hidden"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" class="max-md:w-8 max-md:h-8" viewBox="0 0 24 24"><path fill="none" stroke="#fff" stroke-linecap="round" stroke-width="2" d="M5 7h14M5 12h14M5 17h14"/></svg></li>
+                <li class="max-2xl:ml-2"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" class="max-md:w-7 max-md:h-7"><path fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M3 10a7 7 0 1 0 14 0a7 7 0 1 0-14 0m18 11l-6-6"/></svg></li>
+            </ul>
+        </nav>
+        <!--nav-->
+    
+        <!--hero-->
+        <div class="flex flex-col gap-5 items-center font-serif py-37" id="hero">
+            <h2 class="text-lg">A PHOTO ARTIST BY SMITH</h2>
+            <h1 class="text-6xl">THE BEST PHOTO</h1>
+            <div class="flex gap-20 mt-2">
+                <img src="./img/about1.png" alt="">
+                <img src="./img/about2.png" alt="">
+                <img src="./img/about3.png" alt="">
+            </div>
+        </div>
+        <!--hero-->
+    </div>
+    <!--hero & nav-->
+
+    <!--time-->
+    <div class="bg-black h-95 flex flex-col justify-end items-center text-white max-sm:px-10 max-sm:w-232 max-sm:mt-[-1px] max-md:w-232">
+        <h1 class="text-sm">MADISON SQUARE GARDEN</h1>
+        <h1 class="font-serif text-3xl mt-2">PREMIERE STARTS SOON</h1>
+        <div class="flex gap-37 text-center mb-15 mt-10">
+            <div>
+                <h1 class="text-[75px] font-bold">31</h1>
+                <h2 class="text-sm font-semibold">Days</h2>
+            </div>
+            <div>
+                <h1 class="text-[75px] font-bold">08</h1>
+                <h2 class="text-sm font-semibold">Hours</h2>
+            </div>
+            <div>
+                <h1 class="text-[75px] font-bold">47</h1>
+                <h2 class="text-sm font-semibold">Minutess</h2>
+            </div>
+            <div>
+                <h1 class="text-[75px] font-bold">23</h1>
+                <h2 class="text-sm font-semibold">Second</h2>
+            </div>
+        </div>
+    </div>
+    <!--time-->
+
+    <!--artist-->
+    <div class="py-17 pb-25 px-25 flex gap-20 items-center max-sm:px-10 max-sm:w-232 max-sm:flex-col max-md:w-232">
+        <img src="./img/red.png" alt="" class="w-95 max-sm:w-140 max-md:w-75">
+        <div class="max-sm:flex max-sm:flex-col max-sm:items-center max-sm:px-25">
+            <h1 class="text-sm font-bold text-[#6F6F6F] max-sm:text-2xl">ARTIST</h1>
+            <h2 class="text-[24px] font-serif max-sm:text-4xl max-sm:mt-2">ALIGA SMITH</h2>
+            <p class="text-[#6F6F6F] text-sm my-6 font-semibold max-sm:text-center max-sm:text-lg">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sagittis tincidunt libero vitae dictum. Etiam at iaculis ante. Nulla commodo sem elementum mauris ornare dictum. Cras interdum accumsan dui, in imperdiet tellus mattis et. Vestibulum sodales sit amet elit eget rhoncus.</p>
+            <img src="./img/signature.png" alt="" class="w-36 max-sm:w-40">
+        </div>
+    </div>
+    <!--artist-->
+
+    <!--gallery-->
+    <div class="px-25 mb-20 text-center max-sm:px-10 max-sm:w-232 max-md:w-232 max-lg:px-15">
+        <h1 class="text-[#494949] text-sm max-sm:text-xl">THE BEST PHOTO</h1>
+        <h2 class="font-serif text-[30px] text-[232323] mb-6 mt-2 max-sm:text-4xl">PHOTO GALLERY</h2>
+        <div class="flex flex-wrap justify-center gap-5">
+            <img src="./img/img1.jpg" alt="" class="w-161">            
+            <img src="./img/img2.jpg" alt="" class="w-78">            
+            <img src="./img/img3.jpg" alt="" class="w-78">            
+            <img src="./img/img4.jpg" alt="" class="w-78">            
+            <img src="./img/img5.jpg" alt="" class="w-78">            
+            <img src="./img/img6.jpg" alt="" class="w-161">            
+        </div>
+    </div>
+    <!--gallery-->
+
+    <!--subscribe-->
+    <div class="subscribe h-232 flex flex-col justify-center text-white max-sm:w-232 max-md:w-232">
+        <div class="bg-black h-112 flex flex-col items-center justify-center">
+            <h1 class="mb-3 text-[#D3D3D3] text-sm max-sm:text-lg">GET THE LATEST UPDATES</h1>
+            <h2 class="font-serif text-[30px] mb-12">SUBSCRIBE FOR OUR NEWSLETTER</h2>
+            <div class="input flex items-center gap-3">
+                <input type="search" placeholder="Search for..." class="border-1 p-2 px-4 w-130">
+                <button class="bg-white text-lg p-2 px-7 text-[#777777]">SUBSCRIBE</button>
+            </div>
+        </div>
+        <div>
+            <img src="./img/play.png" alt="" class="w-20 py-50 mx-180 max-sm:mx-110 max-md:mx-110 max-lg:mx-100">
+        </div>
+    </div>
+    <!--subscribe--> 
+    
+    <!--what-->
+    <div class="py-25 flex flex-col justify-center items-center text-center max-sm:w-232 max-md:w-232">
+        <h1 class="font-serif text-[#232323] text-[30px] max-sm:text-4xl">WHAT THEY SAY</h1>
+        <p class="py-4 text-sm text-[#6F6F6F] font-semibold max-sm:text-lg">Lorem ipsum is simplay dummy text of the printing and typesetting industry. Lorem<br>ipsum has been the industry's standard dummy text ever since the when an printer<br>took a gallery of type and scrambled it to make a type specimen book.</p>
+        <h2 class="text-xl">DAVID MATIN</h2>
+        <div class="flex gap-3 text-base mt-5">
+            <div class="bg-[#f8db56] w-8 h-8 flex justify-center items-center max-sm:w-10 max-sm:h-10">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 20 20" class="max-sm:w-5 max-sm:h-5"><path fill="#fff" fill-rule="evenodd" d="M7.222 9.897q3.45-3.461 6.744-6.754a.65.65 0 0 0 0-.896c-.311-.346-.803-.316-1.027-.08Q9.525 5.59 5.796 9.322q-.296.243-.296.574t.296.592l7.483 7.306a.75.75 0 0 0 1.044-.029c.358-.359.22-.713.058-.881a3408 3408 0 0 1-7.16-6.988"/></svg>
+            </div>
+            <div class="bg-[#f8db56] w-8 h-8 flex justify-center items-center max-sm:w-10 max-sm:h-10">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 20 20" class="max-sm:w-5 max-sm:h-5"><path fill="#fff" fill-rule="evenodd" d="m7.053 2.158l7.243 7.256a.66.66 0 0 1 .204.483a.7.7 0 0 1-.204.497q-3.93 3.834-7.575 7.401c-.125.117-.625.408-1.011-.024c-.386-.433-.152-.81 0-.966l7.068-6.908l-6.747-6.759q-.369-.509.06-.939q.43-.43.962-.04"/></svg>
+            </div>
+        </div>
+    </div>
+    <!--what-->
+
+    <!--footer-->    
+    <footer class="bg-[#1d1d1d] px-30 py-12.5 text-[#b0b0b0] flex flex-wrap gap-7 justify-center max-sm:px-20 max-sm:gap-30 max-sm:w-232 max-sm:flex-wrap max-md:w-232 max-md:flex-wrap max-md:gap-23 max-lg:px-15 max-lg:gap-20">
+        <div class="email w-70 max-sm:w-80">
+            <h1 class="font-serif text-white text-[20px] mb-6 max-sm:text-2xl">Get Our Newsletter</h1>
+            <p class="text-[13px] max-sm:text-lg">Lorem ipsum is simply dummy text of the printing and typesetting industry has been the industry's.</p>
+            <input type="email" name="" id="" placeholder="Enter your Email" class="my-3 bg-white rounded-xs p-2 w-full max-sm:my-5">
+            <button class="text-white bg-[#F8DB56] p-2 px-5 rounded-xs text-base">Send</button>
+        </div>
+        <ul class="w-70 text-[13px] max-sm:text-lg">
+            <li class="text-white font-serif text-[20px] mb-6 max-sm:text-2xl">Useful Links</li>
+            <li class="flex gap-2 items-center"><svg xmlns="http://www.w3.org/2000/svg" width="5" height="12" viewBox="0 0 7 16"><path fill="#b0b0b0" d="M1.5 13a.47.47 0 0 1-.35-.15c-.2-.2-.2-.51 0-.71L5.3 7.99L1.15 3.85c-.2-.2-.2-.51 0-.71s.51-.2.71 0l4.49 4.51c.2.2.2.51 0 .71l-4.5 4.49c-.1.1-.23.15-.35.15"/></svg>Home</li>
+            <li class="max-sm:text-sm">-------------------------------------------------</li>
+            <li class="flex gap-2 items-center"><svg xmlns="http://www.w3.org/2000/svg" width="5" height="12" viewBox="0 0 7 16"><path fill="#b0b0b0" d="M1.5 13a.47.47 0 0 1-.35-.15c-.2-.2-.2-.51 0-.71L5.3 7.99L1.15 3.85c-.2-.2-.2-.51 0-.71s.51-.2.71 0l4.49 4.51c.2.2.2.51 0 .71l-4.5 4.49c-.1.1-.23.15-.35.15"/></svg>Our Prices</li>
+            <li class="max-sm:text-sm">-------------------------------------------------</li>
+            <li class="flex gap-2 items-center"><svg xmlns="http://www.w3.org/2000/svg" width="5" height="12" viewBox="0 0 7 16"><path fill="#b0b0b0" d="M1.5 13a.47.47 0 0 1-.35-.15c-.2-.2-.2-.51 0-.71L5.3 7.99L1.15 3.85c-.2-.2-.2-.51 0-.71s.51-.2.71 0l4.49 4.51c.2.2.2.51 0 .71l-4.5 4.49c-.1.1-.23.15-.35.15"/></svg>Contact Us</li>
+            <li class="max-sm:text-sm">-------------------------------------------------</li>
+            <li class="flex gap-2 items-center"><svg xmlns="http://www.w3.org/2000/svg" width="5" height="12" viewBox="0 0 7 16"><path fill="#b0b0b0" d="M1.5 13a.47.47 0 0 1-.35-.15c-.2-.2-.2-.51 0-.71L5.3 7.99L1.15 3.85c-.2-.2-.2-.51 0-.71s.51-.2.71 0l4.49 4.51c.2.2.2.51 0 .71l-4.5 4.49c-.1.1-.23.15-.35.15"/></svg>About Our Salon</li>
+            <li class="max-sm:text-sm">-------------------------------------------------</li>
+            <li class="flex gap-2 items-center"><svg xmlns="http://www.w3.org/2000/svg" width="5" height="12" viewBox="0 0 7 16"><path fill="#b0b0b0" d="M1.5 13a.47.47 0 0 1-.35-.15c-.2-.2-.2-.51 0-.71L5.3 7.99L1.15 3.85c-.2-.2-.2-.51 0-.71s.51-.2.71 0l4.49 4.51c.2.2.2.51 0 .71l-4.5 4.49c-.1.1-.23.15-.35.15"/></svg>Working Hours</li>
+        </ul>
+        <div class="w-70 text-[13px] max-sm:w-80 max-sm:text-lg">
+            <h1 class="text-white font-serif text-[20px] mb-6 max-sm:text-2xl">Twitter</h1>
+            <div class="mb-4 max-sm:mb-8">
+                <h1 class="text-white">Sleek Pique <span class="text-[#F8DB56]">Dec 23, 2024</span></h1>
+                <p class="my-1">Pique made its debut in the respository. Pique made its debut in the respository.</p>
+                <h2 class="italic text-white font-semibold">Kathry P.</h2>
+            </div>
+            <div>
+                <h1 class="text-white">Sleek Pique <span class="text-[#F8DB56]">Dec 23, 2024</span></h1>
+                <p class="my-1">Pique (pronounced "peek") made its debut in the wordpad.</p>
+                <h2 class="italic text-white font-semibold">Kathry P.</h2>
+            </div>
+        </div>
+        <div class="w-78">
+            <h1 class="text-white font-serif text-[20px] mb-6 max-sm:text-2xl">Instagram</h1>
+            <div class="flex flex-wrap gap-1 max-sm:gap-2">
+                <img class="w-17 max-sm:w-18" src="./img/pic1.jpg" alt="">
+                <img class="w-17 max-sm:w-18" src="./img/pic2.jpg" alt="">
+                <img class="w-17 max-sm:w-18" src="./img/pic3.jpg" alt="">
+                <img class="w-17 max-sm:w-18" src="./img/pic4.jpg" alt="">
+                <img class="w-17 max-sm:w-18" src="./img/pic5.jpg" alt="">
+                <img class="w-17 max-sm:w-18" src="./img/pic6.jpg" alt="">
+                <img class="w-17 max-sm:w-18" src="./img/pic7.jpg" alt="">
+                <img class="w-17 max-sm:w-18" src="./img/pic8.jpg" alt="">
+                <img class="w-17 max-sm:w-18" src="./img/pic9.jpg" alt="">
+                <img class="w-17 max-sm:w-18" src="./img/pic10.jpg" alt="">
+                <img class="w-17 max-sm:w-18" src="./img/pic1.jpg" alt="">
+                <img class="w-17 max-sm:w-18" src="./img/pic2.jpg" alt="">
+            </div>
+        </div>
+    </footer>
+    <!--footer-->    
+</body>
+</html>

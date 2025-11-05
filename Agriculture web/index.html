@@ -1,0 +1,627 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>An Overview of Agriculture and Agro-Based Products</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'agro-green': '#2d5016',
+                        'agro-light': '#4ade80',
+                        'agro-dark': '#14532d',
+                    }
+                }
+            }
+        }
+    </script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        .gradient-bg {
+            background: linear-gradient(135deg, #2d5016 0%, #4ade80 100%);
+        }
+        .hero-bg {
+            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://images.unsplash.com/photo-1500382017468-9049fed747ef?auto=format&fit=crop&w=1200&q=80');
+        }
+        .card-hover {
+            transition: all 0.3s ease;
+        }
+        .card-hover:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+        .fade-in {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: all 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        .fade-in.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        /* New Animations */
+        @keyframes bounce-in {
+            0% { transform: scale(0.9); opacity: 0; }
+            60% { transform: scale(1.05); opacity: 1; }
+            80% { transform: scale(0.97); }
+            100% { transform: scale(1); }
+        }
+        .bounce-in { animation: bounce-in 0.7s both; }
+        @keyframes slide-in-left {
+            0% { opacity: 0; transform: translateX(-40px); }
+            100% { opacity: 1; transform: translateX(0); }
+        }
+        .slide-in-left { animation: slide-in-left 0.8s both; }
+        @keyframes slide-in-right {
+            0% { opacity: 0; transform: translateX(40px); }
+            100% { opacity: 1; transform: translateX(0); }
+        }
+        .slide-in-right { animation: slide-in-right 0.8s both; }
+        @keyframes zoom-in {
+            0% { opacity: 0; transform: scale(0.8); }
+            100% { opacity: 1; transform: scale(1); }
+        }
+        .zoom-in { animation: zoom-in 0.7s both; }
+        @keyframes pulse {
+            0%, 100% { box-shadow: 0 0 0 0 rgba(74, 222, 128, 0.7); }
+            50% { box-shadow: 0 0 0 10px rgba(74, 222, 128, 0); }
+        }
+        .pulse {
+            animation: pulse 1.2s infinite;
+        }
+        .ripple {
+            position: relative;
+            overflow: hidden;
+        }
+        .ripple:after {
+            content: '';
+            position: absolute;
+            left: 50%; top: 50%;
+            width: 0; height: 0;
+            background: rgba(74, 222, 128, 0.3);
+            border-radius: 100%;
+            transform: translate(-50%, -50%);
+            opacity: 0;
+            pointer-events: none;
+        }
+        .ripple:active:after {
+            width: 200%; height: 200%;
+            opacity: 1;
+            transition: width 0.4s, height 0.4s, opacity 0.8s;
+        }
+    </style>
+</head>
+<body class="bg-gray-50 overflow-x-hidden">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-lg fixed w-full z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex items-center">
+                    <div class="flex-shrink-0">
+                        <h1 class="text-lg sm:text-xl font-bold text-agro-green">
+                            <i class="fas fa-seedling mr-2"></i>
+                            Agriculture Overview
+                        </h1>
+                    </div>
+                </div> 
+                <!-- Desktop Navigation -->
+                <div class="hidden md:flex items-center space-x-4 lg:space-x-8">
+                    <a href="#home" class="text-gray-700 hover:text-agro-green transition-colors duration-300 text-base lg:text-lg">Home</a>
+                    <a href="#about" class="text-gray-700 hover:text-agro-green transition-colors duration-300 text-base lg:text-lg">About</a>
+                    <a href="#products" class="text-gray-700 hover:text-agro-green transition-colors duration-300 text-base lg:text-lg">Products</a>
+                    <a href="#benefits" class="text-gray-700 hover:text-agro-green transition-colors duration-300 text-base lg:text-lg">Benefits</a>
+                    <a href="#contact" class="text-gray-700 hover:text-agro-green transition-colors duration-300 text-base lg:text-lg">Contact</a>
+                </div>
+                <!-- Mobile menu button -->
+                <div class="md:hidden flex items-center">
+                    <button id="mobile-menu-button" class="text-gray-700 hover:text-agro-green focus:outline-none">
+                        <i class="fas fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile Navigation -->
+        <div id="mobile-menu" class="md:hidden hidden fixed top-16 left-0 w-full bg-white border-t z-50 shadow-lg">
+            <div class="px-2 pt-2 pb-3 space-y-1">
+                <a href="#home" class="block px-3 py-3 text-gray-700 hover:text-agro-green transition-colors duration-300 text-lg">Home</a>
+                <a href="#about" class="block px-3 py-3 text-gray-700 hover:text-agro-green transition-colors duration-300 text-lg">About</a>
+                <a href="#products" class="block px-3 py-3 text-gray-700 hover:text-agro-green transition-colors duration-300 text-lg">Products</a>
+                <a href="#benefits" class="block px-3 py-3 text-gray-700 hover:text-agro-green transition-colors duration-300 text-lg">Benefits</a>
+                <a href="#contact" class="block px-3 py-3 text-gray-700 hover:text-agro-green transition-colors duration-300 text-lg">Contact</a>
+            </div>
+        </div>
+    </nav>
+    <!-- Hero Section -->
+    <section id="home" class="hero-bg bg-cover bg-center min-h-[60vh] md:min-h-screen flex flex-col justify-center text-white py-16 md:py-24">
+        <div class="w-full max-w-4xl mx-auto text-center px-4 sm:px-6 lg:px-8">
+            <div class="fade-in mt-10">
+                <h1 class="text-2xl sm:text-4xl md:text-6xl font-bold mb-4 md:mb-6 fade-in" data-animate="slide-in-left">
+                    An Overview of Agriculture and Agro-Based Products
+                </h1>
+                <p class="text-base sm:text-xl md:text-2xl mb-6 md:mb-8 text-gray-200 fade-in" data-animate="slide-in-right">
+                    Discover the importance of agriculture and explore the world of agro-based products that sustain our lives and economy.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
+                    <a href="#about" class="w-full sm:w-auto bg-agro-light text-agro-dark px-8 py-3 rounded-lg font-semibold hover:bg-white transition-all duration-300 transform hover:scale-105 pulse ripple fade-in text-base md:text-lg" data-animate="bounce-in">
+                        Learn More
+                    </a>
+                    <a href="#products" class="w-full sm:w-auto border-2 border-white text-white px-8 py-3 rounded-lg font-semibold hover:bg-white hover:text-agro-dark transition-all duration-300 transform hover:scale-105 pulse ripple fade-in text-base md:text-lg" data-animate="bounce-in">
+                        Explore Products
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- About Agriculture Section -->
+    <section id="about" class="py-12 md:py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-10 md:mb-16 fade-in" data-animate="slide-in-left">
+                <h2 class="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-900 mb-4">About Agriculture</h2>
+                <p class="text-base sm:text-lg text-gray-600 max-w-3xl mx-auto">
+                    Agriculture is the backbone of human civilization, providing food, fiber, and fuel for billions of people worldwide.
+                </p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 items-center">
+                <div class="fade-in" data-animate="zoom-in">
+                    <img src="https://images.unsplash.com/photo-1500382017468-9049fed747ef?auto=format&fit=crop&w=600&q=80" alt="About Agriculture" class="rounded-2xl shadow-lg w-full mb-8 hidden md:block" loading="lazy" onerror="this.style.display='none'">
+                    <h3 class="text-xl md:text-2xl font-bold text-agro-green mb-6">The Foundation of Our Economy</h3>
+                    <p class="text-gray-700 mb-6 leading-relaxed text-base md:text-lg">
+                        Agriculture plays a crucial role in the global economy, employing over 1 billion people worldwide and contributing significantly to GDP in many countries. It's not just about growing food; it's about sustaining communities and preserving our environment.
+                    </p>
+                    <p class="text-gray-700 mb-6 leading-relaxed text-base md:text-lg">
+                        From small family farms to large commercial operations, agriculture encompasses a wide range of practices including crop cultivation, livestock rearing, forestry, and fisheries. Each sector contributes to food security and economic development.
+                    </p>
+                    <div class="grid grid-cols-2 gap-4 mt-8">
+                        <div class="text-center p-4 bg-green-50 rounded-lg">
+                            <i class="fas fa-globe text-2xl md:text-3xl text-agro-green mb-2"></i>
+                            <p class="font-semibold text-gray-800 text-sm md:text-base">Global Impact</p>
+                        </div>
+                        <div class="text-center p-4 bg-green-50 rounded-lg">
+                            <i class="fas fa-users text-2xl md:text-3xl text-agro-green mb-2"></i>
+                            <p class="font-semibold text-gray-800 text-sm md:text-base">Community Support</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="fade-in" data-animate="zoom-in">
+                    <div class="bg-gradient-to-br from-agro-green to-agro-light p-6 md:p-8 rounded-2xl text-white">
+                        <h4 class="text-lg md:text-xl font-bold mb-4">Key Statistics</h4>
+                        <div class="space-y-4">
+                            <div class="flex justify-between items-center text-sm md:text-base">
+                                <span>Global Agricultural Employment</span>
+                                <span class="font-bold">1.3 Billion</span>
+                            </div>
+                            <div class="flex justify-between items-center text-sm md:text-base">
+                                <span>Food Production Value</span>
+                                <span class="font-bold">$2.4 Trillion</span>
+                            </div>
+                            <div class="flex justify-between items-center text-sm md:text-base">
+                                <span>Land Under Cultivation</span>
+                                <span class="font-bold">1.5 Billion Hectares</span>
+                            </div>
+                            <div class="flex justify-between items-center text-sm md:text-base">
+                                <span>Daily Calories Produced</span>
+                                <span class="font-bold">2,800+ per Person</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Agro-Based Products Section -->
+    <section id="products" class="py-12 md:py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-10 md:mb-16 fade-in" data-animate="slide-in-left">
+                <h2 class="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-900 mb-4">Agro-Based Products</h2>
+                <p class="text-base sm:text-lg text-gray-600 max-w-3xl mx-auto">
+                    Explore the diverse range of products derived from agriculture that nourish and sustain our daily lives.
+                </p>
+            </div>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
+                <!-- Spices & Condiments -->
+                <div class="bg-white rounded-xl shadow-lg p-6 card-hover fade-in" data-animate="bounce-in">
+                    <div class="text-center mb-4">
+                        <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=120&q=80" alt="Spices" class="mx-auto mb-2 w-20 h-20 object-cover rounded-full shadow-md" onerror="this.style.display='none'">
+                        <i class="fas fa-pepper-hot text-4xl text-agro-green mb-3"></i>
+                        <h3 class="text-xl font-bold text-gray-900 mb-2">Herbs & Seasonings</h3>
+                    </div>
+                    <p class="text-gray-700 mb-4">
+                        Aromatic products like turmeric, pepper, cardamom, and cumin that add flavor and medicinal value to food.
+                    </p>
+                    <ul class="text-sm text-gray-600 space-y-1">
+                        <li>• Turmeric and Pepper</li>
+                        <li>• Cardamom and Cumin</li>
+                        <li>• Cloves and Cinnamon</li>
+                        <li>• Mustard and Coriander</li>
+                    </ul>
+                </div>
+
+                <!-- Pulses & Legumes -->
+                <div class="bg-white rounded-xl shadow-lg p-6 card-hover fade-in" data-animate="bounce-in">
+                    <div class="text-center mb-4">
+                        <img src="https://images.unsplash.com/photo-1502741338009-cac2772e18bc?auto=format&fit=crop&w=120&q=80" alt="Pulses" class="mx-auto mb-2 w-20 h-20 object-cover rounded-full shadow-md" onerror="this.style.display='none'">
+                        <i class="fas fa-seedling text-4xl text-agro-green mb-3"></i>
+                        <h3 class="text-xl font-bold text-gray-900 mb-2">Protein Crops</h3>
+                    </div>
+                    <p class="text-gray-700 mb-4">
+                        Protein-rich crops such as lentils, chickpeas, beans, and peas that are vital for a balanced diet.
+                    </p>
+                    <ul class="text-sm text-gray-600 space-y-1">
+                        <li>• Lentils and Chickpeas</li>
+                        <li>• Beans and Peas</li>
+                        <li>• Soybeans and Mung Beans</li>
+                        <li>• Pigeon Pea and Black Gram</li>
+                    </ul>
+                </div>
+
+                <!-- Medicinal & Aromatic Plants -->
+                <div class="bg-white rounded-xl shadow-lg p-6 card-hover fade-in" data-animate="bounce-in">
+                    <div class="text-center mb-4">
+                        <img src="https://images.unsplash.com/photo-1464983953574-0892a716854b?auto=format&fit=crop&w=120&q=80" alt="Medicinal Plants" class="mx-auto mb-2 w-20 h-20 object-cover rounded-full shadow-md" onerror="this.style.display='none'">
+                        <i class="fas fa-leaf text-4xl text-agro-green mb-3"></i>
+                        <h3 class="text-xl font-bold text-gray-900 mb-2">Healing Plants</h3>
+                    </div>
+                    <p class="text-gray-700 mb-4">
+                        Plants like aloe vera, tulsi, mint, and lemongrass used for health, wellness, and essential oils.
+                    </p>
+                    <ul class="text-sm text-gray-600 space-y-1">
+                        <li>• Aloe Vera and Tulsi</li>
+                        <li>• Mint and Lemongrass</li>
+                        <li>• Ashwagandha and Neem</li>
+                        <li>• Basil and Rosemary</li>
+                    </ul>
+                </div>
+
+                <!-- Horticulture Products -->
+                <div class="bg-white rounded-xl shadow-lg p-6 card-hover fade-in" data-animate="bounce-in">
+                    <div class="text-center mb-4">
+                        <img src="https://images.unsplash.com/photo-1465101046530-73398c7f28ca?auto=format&fit=crop&w=120&q=80" alt="Horticulture" class="mx-auto mb-2 w-20 h-20 object-cover rounded-full shadow-md" onerror="this.style.display='none'">
+                        <i class="fas fa-apple-alt text-4xl text-agro-green mb-3"></i>
+                        <h3 class="text-xl font-bold text-gray-900 mb-2">Garden Produce</h3>
+                    </div>
+                    <p class="text-gray-700 mb-4">
+                        Cultivated fruits, vegetables, flowers, and ornamental plants that enhance nutrition and beauty.
+                    </p>
+                    <ul class="text-sm text-gray-600 space-y-1">
+                        <li>• Fruits and Vegetables</li>
+                        <li>• Flowers and Ornamental Plants</li>
+                        <li>• Mushrooms and Berries</li>
+                        <li>• Nursery Plants</li>
+                    </ul>
+                </div>
+
+                <!-- Beverages (Tea, Coffee, etc.) -->
+                <div class="bg-white rounded-xl shadow-lg p-6 card-hover fade-in" data-animate="bounce-in">
+                    <div class="text-center mb-4">
+                        <img src="https://images.unsplash.com/photo-1519864600265-abb23847ef2c?auto=format&fit=crop&w=120&q=80" alt="Beverages" class="mx-auto mb-2 w-20 h-20 object-cover rounded-full shadow-md" onerror="this.style.display='none'">
+                        <i class="fas fa-mug-hot text-4xl text-agro-green mb-3"></i>
+                        <h3 class="text-xl font-bold text-gray-900 mb-2">Natural Drinks</h3>
+                    </div>
+                    <p class="text-gray-700 mb-4">
+                        Popular drinks like tea, coffee, and cocoa derived from agricultural crops enjoyed worldwide.
+                    </p>
+                    <ul class="text-sm text-gray-600 space-y-1">
+                        <li>• Tea and Coffee</li>
+                        <li>• Cocoa and Herbal Teas</li>
+                        <li>• Fruit Juices</li>
+                        <li>• Coconut Water</li>
+                    </ul>
+                </div>
+
+                <!-- Fiber Crops (Cotton, Jute, etc.) -->
+                <div class="bg-white rounded-xl shadow-lg p-6 card-hover fade-in" data-animate="bounce-in">
+                    <div class="text-center mb-4">
+                        <img src="https://images.unsplash.com/photo-1506784983877-45594efa4cbe?auto=format&fit=crop&w=120&q=80" alt="Fiber Crops" class="mx-auto mb-2 w-20 h-20 object-cover rounded-full shadow-md" onerror="this.style.display='none'">
+                        <i class="fas fa-tshirt text-4xl text-agro-green mb-3"></i>
+                        <h3 class="text-xl font-bold text-gray-900 mb-2">Textile Plants</h3>
+                    </div>
+                    <p class="text-gray-700 mb-4">
+                        Crops like cotton, jute, and flax used for making textiles, ropes, and other industrial products.
+                    </p>
+                    <ul class="text-sm text-gray-600 space-y-1">
+                        <li>• Cotton and Jute</li>
+                        <li>• Flax and Hemp</li>
+                        <li>• Sisal and Ramie</li>
+                        <li>• Coir and Kenaf</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Benefits Section -->
+    <section id="benefits" class="py-12 md:py-20 bg-white relative overflow-hidden">
+        <img src="https://images.unsplash.com/photo-1500382017468-9049fed747ef?auto=format&fit=crop&w=800&q=60" alt="Benefits Background" class="absolute right-0 top-0 w-1/2 h-full object-cover opacity-10 pointer-events-none hidden lg:block" loading="lazy" onerror="this.style.display='none'">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-10 md:mb-16 fade-in" data-animate="slide-in-left">
+                <h2 class="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-900 mb-4">Benefits of Agriculture</h2>
+                <p class="text-base sm:text-lg text-gray-600 max-w-3xl mx-auto">
+                    Discover how agriculture and agro-based products benefit farmers, consumers, and the environment.
+                </p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8">
+                <!-- Income for Farmers -->
+                <div class="text-center fade-in" data-animate="zoom-in">
+                    <div class="bg-agro-green text-white p-6 rounded-full w-20 h-20 mx-auto mb-4 flex items-center justify-center">
+                        <i class="fas fa-dollar-sign text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">Income for Farmers</h3>
+                    <p class="text-gray-700">
+                        Agriculture provides sustainable livelihoods for millions of farmers worldwide, supporting rural economies and reducing poverty.
+                    </p>
+                </div>
+
+                <!-- Organic & Chemical-Free -->
+                <div class="text-center fade-in" data-animate="zoom-in">
+                    <div class="bg-agro-green text-white p-6 rounded-full w-20 h-20 mx-auto mb-4 flex items-center justify-center">
+                        <i class="fas fa-seedling text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">Organic & Chemical-Free</h3>
+                    <p class="text-gray-700">
+                        Many agro-products are grown without harmful chemicals, providing healthier food options for consumers.
+                    </p>
+                </div>
+
+                <!-- Locally Grown & Fresh -->
+                <div class="text-center fade-in" data-animate="zoom-in">
+                    <div class="bg-agro-green text-white p-6 rounded-full w-20 h-20 mx-auto mb-4 flex items-center justify-center">
+                        <i class="fas fa-map-marker-alt text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">Locally Grown & Fresh</h3>
+                    <p class="text-gray-700">
+                        Local agriculture reduces transportation costs, ensures freshness, and supports community food systems.
+                    </p>
+                </div>
+
+                <!-- Environmental Sustainability -->
+                <div class="text-center fade-in" data-animate="zoom-in">
+                    <div class="bg-agro-green text-white p-6 rounded-full w-20 h-20 mx-auto mb-4 flex items-center justify-center">
+                        <i class="fas fa-recycle text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">Environmental Sustainability</h3>
+                    <p class="text-gray-700">
+                        Sustainable farming practices protect soil health, conserve water, and reduce environmental impact.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Additional Benefits -->
+            <div class="mt-10 md:mt-16 grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8">
+                <div class="bg-green-50 p-6 md:p-8 rounded-xl fade-in" data-animate="slide-in-left">
+                    <h3 class="text-xl md:text-2xl font-bold text-agro-green mb-4">Economic Benefits</h3>
+                    <ul class="space-y-2 md:space-y-3 text-gray-700 text-base md:text-lg">
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-agro-green mt-1 mr-3"></i>
+                            <span>Creates employment opportunities in rural areas</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-agro-green mt-1 mr-3"></i>
+                            <span>Contributes to national GDP and export earnings</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-agro-green mt-1 mr-3"></i>
+                            <span>Supports related industries like food processing</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-agro-green mt-1 mr-3"></i>
+                            <span>Reduces dependency on food imports</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="bg-green-50 p-6 md:p-8 rounded-xl fade-in" data-animate="slide-in-right">
+                    <h3 class="text-xl md:text-2xl font-bold text-agro-green mb-4">Health Benefits</h3>
+                    <ul class="space-y-2 md:space-y-3 text-gray-700 text-base md:text-lg">
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-agro-green mt-1 mr-3"></i>
+                            <span>Provides essential nutrients and vitamins</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-agro-green mt-1 mr-3"></i>
+                            <span>Reduces exposure to harmful chemicals</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-agro-green mt-1 mr-3"></i>
+                            <span>Supports healthy eating habits</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-agro-green mt-1 mr-3"></i>
+                            <span>Promotes food security and nutrition</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Contact Section -->
+    <section id="contact" class="py-12 md:py-20 bg-gray-50">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-10 md:mb-16 fade-in" data-animate="slide-in-left">
+                <h2 class="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-900 mb-4">Contact Us</h2>
+                <p class="text-base sm:text-lg text-gray-600">
+                    Have questions about agriculture and agro-based products? Get in touch with us!
+                </p>
+            </div>
+            <div class="relative flex flex-col md:flex-row items-center bg-white rounded-2xl shadow-xl p-4 md:p-8 fade-in" data-animate="zoom-in">
+                <div class="hidden md:block w-full md:w-1/3 pr-0 md:pr-8 mb-6 md:mb-0">
+                    <img src="https://images.unsplash.com/photo-1500382017468-9049fed747ef?auto=format&fit=crop&w=400&q=80" alt="Contact Us" class="rounded-xl shadow-md w-full h-auto" loading="lazy" onerror="this.style.display='none'">
+                </div>
+                <div class="w-full md:w-2/3">
+                <form id="contact-form" class="space-y-4 md:space-y-6">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6">
+                        <div>
+                            <label for="name" class="block text-sm font-medium text-gray-700 mb-2">Name</label>
+                            <input type="text" id="name" name="name" required 
+                                   class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-agro-green focus:border-transparent transition-all duration-300">
+                        </div>
+                        <div>
+                            <label for="email" class="block text-sm font-medium text-gray-700 mb-2">Email</label>
+                            <input type="email" id="email" name="email" required 
+                                   class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-agro-green focus:border-transparent transition-all duration-300">
+                        </div>
+                    </div>
+                    <div>
+                        <label for="message" class="block text-sm font-medium text-gray-700 mb-2">Message</label>
+                        <textarea id="message" name="message" rows="5" required 
+                                  class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-agro-green focus:border-transparent transition-all duration-300 resize-none"></textarea>
+                    </div>
+                    <div class="text-center">
+                        <button type="submit" 
+                                class="bg-agro-green text-white px-8 py-3 rounded-lg font-semibold hover:bg-agro-dark transition-all duration-300 transform hover:scale-105">
+                            Send Message
+                        </button>
+                    </div>
+                </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Footer -->
+    <footer class="bg-agro-dark text-white py-8 md:py-12 fade-in" data-animate="slide-in-up">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
+                <div class="md:col-span-2">
+                    <h3 class="text-lg md:text-xl font-bold mb-4">
+                        <i class="fas fa-seedling mr-2"></i>
+                        Agriculture Overview
+                    </h3>
+                    <p class="text-gray-300 mb-4 text-sm md:text-base">
+                        Educating people about the importance of agriculture and agro-based products in our daily lives and economy.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-300 hover:text-white transition-colors duration-300">
+                            <i class="fab fa-facebook text-xl"></i>
+                        </a>
+                        <a href="#" class="text-gray-300 hover:text-white transition-colors duration-300">
+                            <i class="fab fa-twitter text-xl"></i>
+                        </a>
+                        <a href="#" class="text-gray-300 hover:text-white transition-colors duration-300">
+                            <i class="fab fa-instagram text-xl"></i>
+                        </a>
+                        <a href="#" class="text-gray-300 hover:text-white transition-colors duration-300">
+                            <i class="fab fa-linkedin text-xl"></i>
+                        </a>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="text-base md:text-lg font-semibold mb-4">Quick Links</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#home" class="text-gray-300 hover:text-white transition-colors duration-300">Home</a></li>
+                        <li><a href="#about" class="text-gray-300 hover:text-white transition-colors duration-300">About</a></li>
+                        <li><a href="#products" class="text-gray-300 hover:text-white transition-colors duration-300">Products</a></li>
+                        <li><a href="#benefits" class="text-gray-300 hover:text-white transition-colors duration-300">Benefits</a></li>
+                        <li><a href="#contact" class="text-gray-300 hover:text-white transition-colors duration-300">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-base md:text-lg font-semibold mb-4">Contact Info</h4>
+                    <div class="space-y-2 text-gray-300 text-sm md:text-base">
+                        <p><i class="fas fa-envelope mr-2"></i> info@agriculture.com</p>
+                        <p><i class="fas fa-phone mr-2"></i>+91 12334567890</p>
+                        <p><i class="fas fa-map-marker-alt mr-2"></i> Farm District, Rajkot</p>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center">
+                <p class="text-gray-300 text-xs md:text-base">
+                    © 2024 Agriculture Overview. All rights reserved. | 
+                    <a href="#" class="text-agro-light hover:text-white transition-colors duration-300">Privacy Policy</a> | 
+                    <a href="#" class="text-agro-light hover:text-white transition-colors duration-300">Terms of Service</a>
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        // Mobile menu toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Close mobile menu on link click
+        document.querySelectorAll('#mobile-menu a').forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        });
+
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                    // Close mobile menu if open
+                    mobileMenu.classList.add('hidden');
+                }
+            });
+        });
+
+        // Scroll animations
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    const anim = entry.target.getAttribute('data-animate');
+                    if (anim) {
+                        entry.target.classList.add(anim);
+                    }
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.fade-in').forEach(el => {
+            observer.observe(el);
+        });
+
+        // Contact form handling
+        document.getElementById('contact-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const message = document.getElementById('message').value;
+            
+            // Simple validation
+            if (name && email && message) {
+                alert('Thank you for your message! We will get back to you soon.');
+                this.reset();
+            } else {
+                alert('Please fill in all fields.');
+            }
+        });
+
+        // Add scroll effect to navigation
+        window.addEventListener('scroll', () => {
+            const nav = document.querySelector('nav');
+            if (window.scrollY > 100) {
+                nav.classList.add('bg-white/95', 'backdrop-blur-sm');
+            } else {
+                nav.classList.remove('bg-white/95', 'backdrop-blur-sm');
+            }
+        });
+
+        // Initialize fade-in elements on page load
+        document.addEventListener('DOMContentLoaded', () => {
+            document.querySelectorAll('.fade-in').forEach(el => {
+                observer.observe(el);
+            });
+        });
+    </script>
+</body>
+</html>

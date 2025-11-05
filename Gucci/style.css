@@ -1,0 +1,22 @@
+*{
+    font-family: sans-serif;
+}
+@font-face{
+  font-family: "Name";
+  src: url(./Poppins-Light.ttf);
+}
+.name{
+  font-family: "Name";
+}
+.hero{
+  background-image: url(./img/bg.jpg);
+  height: 670px;
+  background-position: center;
+  background-size: cover;
+}
+.attach{
+  background-image: url(./img/bg-2.png); 
+  background-position: center; 
+  background-attachment: fixed; 
+  background-size: cover;
+}

@@ -1,0 +1,21 @@
+*{
+    font-family: sans-serif;
+}
+.hero{
+    background-image: url(./img/bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 767px;
+}
+.reservation{
+    background-image: url(./img/bg-2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: end;
+}
+.attach{
+    background-image: url(./img/attach.jpg); 
+    background-position: center; 
+    background-attachment: fixed; 
+    background-size: cover;
+}
